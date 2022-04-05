@@ -33,3 +33,19 @@
   .incorrect {
     background-color: #f4cece;
   }
+
+  /* HUD */
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .hud-main-text {
+    text-align: center;
+  }
