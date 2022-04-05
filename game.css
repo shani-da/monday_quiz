@@ -26,7 +26,7 @@ p {
   
   .choice-text {
     padding: 1.5rem;
-    color:black;
+    color:rgb(26, 26, 26);
     width: 100%;
   }
 
@@ -52,6 +52,8 @@ p {
   
   .hud-main-text {
     text-align: center;
+    color:rgb(26, 26, 26);
+
   }
 
   #progressBar {
