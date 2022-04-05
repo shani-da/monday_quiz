@@ -52,6 +52,9 @@ p {
   
   .hud-main-text {
     text-align: center;
+
+  }
+  p {
     color:rgb(26, 26, 26);
 
   }
