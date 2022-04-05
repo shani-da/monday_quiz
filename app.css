@@ -1,0 +1,51 @@
+:root {
+    background-color: aliceblue;
+    font-size: 62.5%;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #3333;
+}
+
+h1,h2,h3,h4 {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 5.4rem;
+    color: rgb(4, 79, 79);
+    margin-bottom: 5rem;
+}
+
+h1>span {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 4.2rem;
+    color: rgb(32, 156, 214);
+    margin-bottom: 4rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2.8rem;
+    color: rgb(16, 176, 176);
+    font-weight: 500;
+}
+
+/*util*/
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
