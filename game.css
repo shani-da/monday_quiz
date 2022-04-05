@@ -25,3 +25,11 @@
     color: rgb(67, 67, 67);
     width: 100%;
   }
+
+  .correct {
+    background-color: #74d88c;
+  }
+  
+  .incorrect {
+    background-color: #f8959f;
+  }
