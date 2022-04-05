@@ -39,6 +39,11 @@ h3 {
     font-weight: 500;
 }
 
+p {
+    color: rgba(15, 15, 15, 0.2);
+
+}
+
 /*util*/
 
 .container {
