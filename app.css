@@ -119,47 +119,15 @@ p {
     transform: none;
   }
 */
-.btn{
-    display: block;
-    width: 200px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 18px;
-    font-family: sans-serif;
-    text-decoration: none;
-    color: #333;
-    border: 2px solid #333;
-    letter-spacing: 2px;
-    text-align: center;
-    position: relative;
-    transition: all .35s;
-  }
-  
-  .btn span{
-    position: relative;
-    z-index: 2;
-  }
-  
-  .btn:after{
-    position: absolute;
-    
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: teal;
-    transition: all .35s;
-    color: #333;
-    text-align: center;
-
-  }
-  
-  .btn:hover{
+.btn {
+    border-color: #3498db;
     color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
   }
-  
-  .btn:hover:after{
-    width: 100%;
+  .btn:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
   }
   /* FORMS */
 form {
