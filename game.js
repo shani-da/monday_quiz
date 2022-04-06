@@ -20,11 +20,15 @@ var interval = setInterval(function(){
   if (count === 0){
     clearInterval(interval);
     document.getElementById('count').innerHTML='Done';
-    getNewQuestion();
-
+    setTimeout(() => {
+        selectedChoice.parentElement.classList.remove(classToApply);
+        getNewQuestion();
+    }, 1000);
 
   }
 }, 1000);
+
+
 
 fetch(
     'https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple'
