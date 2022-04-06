@@ -47,8 +47,8 @@ p {
 /*util*/
 
 .container {
-    width: 100vw;
-    height: 80vh;
+    width:fit-content;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
