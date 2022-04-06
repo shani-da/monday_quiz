@@ -121,6 +121,9 @@ p {
 */
 .btn {
     width: 20rem;
+    height: 5rem;
+    text-align: center;
+
     box-sizing: border-box;
     -webkit-appearance: none;
        -moz-appearance: none;
