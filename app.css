@@ -266,19 +266,7 @@ form {
     box-shadow: var(hsla(210, 40%, 52%, .4)) 2px 2px 22px;
     border-radius: 4px; 
     z-index: 0;  
-    overflow: hidden;   
-  }
-  
-  button:focus {
-    outline-color: transparent;
-    box-shadow: var(--btn-color) 2px 2px 22px;
-  }
-  
-
-  
- 
-  /* bubbles */
-  button {
+    overflow: hidden; 
     content: '';
     pointer-events: none;
     opacity: .6;
@@ -301,5 +289,11 @@ form {
     }
     to {
       transform: translate(0, -66.666%);
-    }
-}
+    }  
+  }
+  
+  button:focus {
+    outline-color: transparent;
+    box-shadow: var(--btn-color) 2px 2px 22px;
+  }
+  
