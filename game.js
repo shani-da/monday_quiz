@@ -79,7 +79,7 @@ getNewQuestion = () => {
       if (count === -2){
         document.getElementById('count').innerHTML=15;
         getNewQuestion();
-        count = 15;
+        count = 14;
     
     }
     }, 1000);
