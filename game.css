@@ -3,7 +3,7 @@ p {
     ;
 
 }
-h2 {
+h2[id="question"]{
     color: rgba(15, 15, 15, 0.2);
 }
 .choice-container {
