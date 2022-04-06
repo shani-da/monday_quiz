@@ -119,7 +119,7 @@ p {
   */
 
 
-  button {
+  .btn {
     position:relative;
     padding: 10px 20px;  
     border: none;
@@ -139,7 +139,7 @@ p {
     overflow: hidden;   
   }
   
-  button:focus {
+  .btn:focus {
     outline-color: transparent;
     box-shadow: var(--btn-color) 2px 2px 22px;
   }
@@ -153,7 +153,7 @@ p {
     pointer-events:none;
   }
   
-  button::after{
+  .btn::after{
     font-weight: 200;
     top: -30px;
     left: -20px;
@@ -181,20 +181,20 @@ p {
     transform: translate(0, -90%) rotate(0deg)
   }
   
-  button:hover .right::after {
+  .btn:hover .right::after {
     transform: translate(0, -47%) rotate(0deg)
   }
   
-  button .right:hover::after {
+  .btn .right:hover::after {
     transform: translate(0, -50%) rotate(-7deg)
   }
   
-  button .left:hover ~ .right::after {
+  .btn .left:hover ~ .right::after {
     transform: translate(0, -50%) rotate(7deg)
   }
   
   /* bubbles */
-  button::before {
+  .btn::before {
     content: '';
     pointer-events: none;
     opacity: .6;
