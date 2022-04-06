@@ -149,6 +149,8 @@ p {
     height: 100%;
     background: #ff003b;
     transition: all .35s;
+    color: #333;
+
   }
   
   .btn:hover{
