@@ -72,7 +72,7 @@ getNewQuestion = () => {
         //go to the end page
         return window.location.assign('/end.html');
     }
-    var count = 14;
+    var count = 15;
     interval = setInterval(function(){
       document.getElementById('count').innerHTML=count;
       count--;
