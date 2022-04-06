@@ -78,11 +78,10 @@ p {
     align-items: center;
     margin:  0 auto;
     margin-top: 5rem;
-
+    text-align: center;
     box-shadow : 0 5px 20px rgba(0,0,0,0.5);
     padding: 1rem;
     background-color: whitesmoke;
-
 
 }
 
