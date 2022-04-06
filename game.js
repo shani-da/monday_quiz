@@ -62,7 +62,7 @@ startGame = () => {
     game.classList.remove('hidden');
     loader.classList.add('hidden');
 };
-
+var interval;
 getNewQuestion = () => {
     if(interval){
         clearInterval(interval);
@@ -73,7 +73,7 @@ getNewQuestion = () => {
         return window.location.assign('/end.html');
     }
     var count = 15;
-    var interval = setInterval(function(){
+    interval = setInterval(function(){
       document.getElementById('count').innerHTML=count;
       count--;
       if (count === 0){
