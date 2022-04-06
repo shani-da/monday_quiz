@@ -7,6 +7,8 @@
   .high-score {
     font-size: 2.8rem;
     margin-bottom: 0.5rem;
+    color:rgb(26, 26, 26);
+
   }
   
   .high-score:hover {
