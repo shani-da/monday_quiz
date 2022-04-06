@@ -151,7 +151,7 @@ p {
   }
 */
   .btn:hover, .btn:focus {
-    color: #fff;
+    color: #3498db;
     outline: 0;
   }
 .btn {
