@@ -9,38 +9,40 @@
     <link rel="stylesheet" href="game.css" />
   </head>
   <body>
+    <div id="hud">
+        <div id="hud-item">
+          <p id="progressText" class="hud-prefix">
+            Question
+          </p>
+
+          <div id="progressBar">
+            <div id="progressBarFull"></div>
+          </div>
+        </div>
+        <div id="hud-item">
+          <p class="hud-prefix">
+            Time
+          </p>
+          <h1  id="count" class="hud-main-text" id="score">
+            15
+          </h1>
+        </div>
+      
+        <div id="hud-item">
+          
+          <p class="hud-prefix">
+            Score
+          </p>
+          <h1 class="hud-main-text" id="score">
+            0
+          </h1>
+        </div>
+      </div>
+
     <div class="container">
       <div id="loader"></div>
       <div id="game" class="justify-center flex-column hidden">
-        <div id="hud">
-          <div id="hud-item">
-            <p id="progressText" class="hud-prefix">
-              Question
-            </p>
 
-            <div id="progressBar">
-              <div id="progressBarFull"></div>
-            </div>
-          </div>
-          <div id="hud-item">
-            <p class="hud-prefix">
-              Time
-            </p>
-            <h1  id="count" class="hud-main-text" id="score">
-              15
-            </h1>
-          </div>
-        
-          <div id="hud-item">
-            
-            <p class="hud-prefix">
-              Score
-            </p>
-            <h1 class="hud-main-text" id="score">
-              0
-            </h1>
-          </div>
-        </div>
         <h2 id="question"></h2>
         <div class="choice-container">
           <p class="choice-prefix">A</p>
