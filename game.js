@@ -64,6 +64,8 @@ startGame = () => {
 };
 
 getNewQuestion = () => {
+    clearInterval(interval);
+
     if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
         //go to the end page
@@ -102,7 +104,6 @@ getNewQuestion = () => {
 
 choices.forEach((choice) => {
     choice.addEventListener('click', (e) => {
-        clearInterval(interval);
 
         if (!acceptingAnswers) return;
 
