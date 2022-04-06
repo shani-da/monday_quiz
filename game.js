@@ -77,7 +77,7 @@ getNewQuestion = () => {
       document.getElementById('count').innerHTML=count;
       count--;
       if (count === -2){
-        document.getElementById('count').innerHTML='Done';
+        document.getElementById('count').innerHTML=15;
         getNewQuestion();
         count = 15;
     
