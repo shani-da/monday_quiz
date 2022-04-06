@@ -37,7 +37,7 @@ h2 {
   }
   
   .incorrect {
-    background-color: #f4cece;
+    background-color: #ec5151;
   }
 
   /* HUD */
@@ -54,7 +54,7 @@ h2 {
   
   .hud-main-text {
     text-align: center;
-    color: rgb(216, 44, 153);
+    color: #f4cece;
 
   }
   p {
@@ -65,13 +65,13 @@ h2 {
   #progressBar {
     width: 20rem;
     height: 4rem;
-    border: 0.3rem solid rgb(4, 79, 79);
+    border: 0.3rem solid #f4cece;
     margin-top: 1.5rem;
   }
   
   #progressBarFull {
     height: 3.4rem;
-    background-color: rgb(4, 79, 79);
+    background-color: #f4cece;
     width: 0%;
   }
   
