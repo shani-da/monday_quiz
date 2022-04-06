@@ -94,7 +94,6 @@ getNewQuestion = () => {
     choices.forEach((choice) => {
         const number = choice.dataset['number'];
         choice.innerText = currentQuestion['choice' + number];
-        clearInterval(interval);
     });
 
     availableQuesions.splice(questionIndex, 1);
@@ -103,6 +102,8 @@ getNewQuestion = () => {
 
 choices.forEach((choice) => {
     choice.addEventListener('click', (e) => {
+        clearInterval(interval);
+
         if (!acceptingAnswers) return;
 
         acceptingAnswers = false;
