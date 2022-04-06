@@ -93,7 +93,7 @@ p {
   }
   
   /* BUTTONS */
- /*
+ 
   .btn {
     font-size: 1.8rem;
     padding: 1rem 0;
@@ -105,7 +105,7 @@ p {
     color: #56a5eb;
     background-color: white;
   }
-  
+ /* 
   .btn:hover {
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
@@ -118,7 +118,7 @@ p {
     box-shadow: none;
     transform: none;
   }
-*/
+
 .btn {
     width: 20rem;
     height: 5rem;
@@ -149,6 +149,7 @@ p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
   }
+*/
   .btn:hover, .btn:focus {
     color: #fff;
     outline: 0;
