@@ -1,9 +1,9 @@
 p {
     color:  #143b5d;
 }
-h2[id="question"]{
-    color: rgba(13, 9, 49, 0.2);
-}
+h2 {
+    color: rgb(16, 7, 51);
+  }
 .choice-container {
     display: flex;
     margin-bottom: 0.5rem;
@@ -60,9 +60,7 @@ h2[id="question"]{
     color:rgb(26, 26, 26);
 
   }
-  h2 {
-    color: rgb(16, 7, 51);
-  }
+
   #progressBar {
     width: 20rem;
     height: 4rem;
