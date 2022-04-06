@@ -54,7 +54,7 @@ p {
     align-items: center;
     max-width:  80rem;
     margin:  0 auto;
-    border: 0cm;
+    border-color: black;
 }
 
 .container > * {
