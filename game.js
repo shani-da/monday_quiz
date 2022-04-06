@@ -22,7 +22,9 @@ var interval = setInterval(function(){
     document.getElementById('count').innerHTML='Done';
     getNewQuestion();
     count = 15;
-  }
+    document.getElementById('count').innerHTML=15;
+
+}
 }, 1000);
 
 
