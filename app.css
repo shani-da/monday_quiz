@@ -120,6 +120,7 @@ p {
   }
 */
 .btn {
+    width: 20rem;
     box-sizing: border-box;
     -webkit-appearance: none;
        -moz-appearance: none;
