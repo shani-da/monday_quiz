@@ -1,6 +1,10 @@
 p {
-    color: rgba(15, 15, 15, 0.2);
+    color:  #143b5d;
+    ;
 
+}
+h2 {
+    color: rgba(15, 15, 15, 0.2);
 }
 .choice-container {
     display: flex;
@@ -68,7 +72,7 @@ p {
   
   #progressBarFull {
     height: 3.4rem;
-    background-color: #56a5eb;
+    background-color: #143b5d;
     width: 0%;
   }
   
