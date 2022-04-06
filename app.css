@@ -1,6 +1,10 @@
 :root {
     background-color: aliceblue;
     font-size: 62.5%;
+    --text-color: hsla(210, 50%, 85%, 1);
+    --shadow-color: hsla(210, 40%, 52%, .4);
+    --btn-color: hsl(210, 80%, 42%);
+    --bg-color: #141218;
 }
 
 *{
