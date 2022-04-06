@@ -28,7 +28,7 @@ h1>span {
 
 h2 {
     font-size: 4.2rem;
-    color: rgb(32, 156, 214);
+    color: rgb(16, 7, 51);
     margin-bottom: 4rem;
     font-weight: 700;
 }
@@ -97,10 +97,10 @@ p {
     padding: 1rem 0;
     width: 20rem;
     text-align: center;
-    border: 0.1rem solid #3a17ac;
+    border: 0.1rem solid #3574aa;
     margin-bottom: 1rem;
     text-decoration: none;
-    color: #3a17ac;
+    color: #56a5eb;
     background-color: white;
   }
   
@@ -135,5 +135,5 @@ form {
   }
   
   input::placeholder {
-    color: rgb(84, 79, 79);
+    color: rgb(53, 51, 51);
   }
