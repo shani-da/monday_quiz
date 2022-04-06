@@ -20,6 +20,8 @@ var interval = setInterval(function(){
   if (count === 0){
     clearInterval(interval);
     document.getElementById('count').innerHTML='Done';
+    getNewQuestion();
+
 
   }
 }, 1000);
