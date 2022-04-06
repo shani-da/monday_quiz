@@ -64,13 +64,13 @@ h2 {
   #progressBar {
     width: 20rem;
     height: 4rem;
-    border: 0.3rem solid #143b5d;
+    border: 0.3rem solid cornflowerblue;
     margin-top: 1.5rem;
   }
   
   #progressBarFull {
     height: 3.4rem;
-    background-color: #143b5d;
+    background-color: cornflowerblue;
     width: 0%;
   }
   
