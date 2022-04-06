@@ -20,12 +20,8 @@ var interval = setInterval(function(){
   if (count === 0){
     clearInterval(interval);
     document.getElementById('count').innerHTML='Done';
-    setTimeout(() => {
-        selectedChoice.parentElement.classList.remove(classToApply);
-        getNewQuestion();
-    }, 1000);
-    count = 15
-
+    getNewQuestion();
+    count = 15;
   }
 }, 1000);
 
