@@ -1,6 +1,7 @@
 :root {
     background-color: aliceblue;
     font-size: 62.5%;
+    border-color: black;
 }
 
 *{
@@ -54,7 +55,6 @@ p {
     align-items: center;
     max-width:  80rem;
     margin:  0 auto;
-    border-color: black;
 }
 
 .container > * {
