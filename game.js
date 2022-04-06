@@ -13,18 +13,7 @@ let availableQuesions = [];
 
 let questions = [];
 
-var count = 15;
-var interval = setInterval(function(){
-  document.getElementById('count').innerHTML=count;
-  count--;
-  if (count === 0){
-    document.getElementById('count').innerHTML='Done';
-    getNewQuestion();
-    count = 15;
-    document.getElementById('count').innerHTML=15;
 
-}
-}, 1000);
 
 
 
@@ -80,6 +69,19 @@ getNewQuestion = () => {
         //go to the end page
         return window.location.assign('/end.html');
     }
+    var count = 15;
+    var interval = setInterval(function(){
+      document.getElementById('count').innerHTML=count;
+      count--;
+      if (count === 0){
+        document.getElementById('count').innerHTML='Done';
+        getNewQuestion();
+        count = 15;
+        document.getElementById('count').innerHTML=15;
+    
+    }
+    }, 1000);
+
     questionCounter++;
     progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
     //Update the progress bar
