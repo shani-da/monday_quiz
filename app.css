@@ -150,6 +150,7 @@ p {
     background: teal;
     transition: all .35s;
     color: #333;
+    text-align: center;
 
   }
   
