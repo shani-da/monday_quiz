@@ -73,8 +73,7 @@ p {
 
 /*util*/
 .container2 {
-    width: 100rem;
-    max-width:auto;
+    width: auto;
     height:min-content;
     align-items: center;
     margin:  0 auto;
