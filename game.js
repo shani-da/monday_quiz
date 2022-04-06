@@ -24,6 +24,7 @@ var interval = setInterval(function(){
         selectedChoice.parentElement.classList.remove(classToApply);
         getNewQuestion();
     }, 1000);
+    count = 15
 
   }
 }, 1000);
