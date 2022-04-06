@@ -72,6 +72,29 @@ p {
 }
 
 /*util*/
+.container2 {
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width:  80rem;
+    margin:  0 auto;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+
+
+    box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+    padding: 5rem;
+    background-color: whitesmoke;
+
+
+}
+
+.container2 > * {
+    width: 100%;
+}
+
 
 .container {
     width:auto;
