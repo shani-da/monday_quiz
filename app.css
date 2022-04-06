@@ -222,7 +222,34 @@ p {
     }
   }
 */
-button {
+
+
+  /* FORMS */
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  }
+  
+  input::placeholder {
+    color: rgb(53, 51, 51);
+  }
+
+
+  /*button*/
+  @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900');
+
+  button {
     position:relative;
     padding: 10px 20px;  
     border: none;
@@ -321,26 +348,4 @@ button {
     to {
       transform: translate(0, -66.666%);
     }
-  }
-
-
-  /* FORMS */
-form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  input {
-    margin-bottom: 1rem;
-    width: 20rem;
-    padding: 1.5rem;
-    font-size: 1.8rem;
-    border: none;
-    box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
-  }
-  
-  input::placeholder {
-    color: rgb(53, 51, 51);
-  }
+}
