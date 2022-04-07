@@ -55,6 +55,7 @@ h2 {
   .hud-main-text {
     text-align: center;
     color: #7613ce;
+    outline: #faf7fd;
 
   }
   p {
@@ -65,7 +66,8 @@ h2 {
   #progressBar {
     width: 20rem;
     height: 4rem;
-    border: 0.3rem solid #7613ce;
+    border: 0.3rem solid #faf7fd;
+    
     margin-top: 1.5rem;
   }
   
