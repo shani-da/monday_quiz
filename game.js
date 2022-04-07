@@ -6,7 +6,7 @@ const progressBarFull = document.getElementById('progressBarFull');
 const loader = document.getElementById('loader');
 const game = document.getElementById('game');
 
-const stam = document.getElementById('st');
+//const stam = document.getElementById('st');
 
 let currentQuestion = {};
 let acceptingAnswers = false;
