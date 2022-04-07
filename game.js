@@ -5,6 +5,9 @@ const scoreText = document.getElementById('score');
 const progressBarFull = document.getElementById('progressBarFull');
 const loader = document.getElementById('loader');
 const game = document.getElementById('game');
+
+const stam = document.getElementById('st');
+
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
@@ -13,6 +16,7 @@ let availableQuesions = [];
 
 let questions = [];
 let q;
+let category;
 
 
 
@@ -24,13 +28,14 @@ fetch(
         return res.json();
     })
     .then((loadedQuestions) => {
+ 
         questions = loadedQuestions.results.map((loadedQuestion) => {
             const formattedQuestion = {
-                
+                category: loadedQuestion.category,               
                 question: loadedQuestion.question.replace(/(&quot\;)/g,"\"").replace(/(&#039\;)/g,"\'").replace(/(&amp\;)/g,"&")
                 .replace(/(&deg\;)/g,"°").replace(/(&rsquo\;)/g,"\'").replace(/(&shy\;)/g,"-").replace(/(&Eacute\;)/g,"É").replace(/(&ntilde\;)/g,"ñ"),
             };
-
+            stam.innerHTML = category;
             const answerChoices = [...loadedQuestion.incorrect_answers];
             formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
             answerChoices.splice(
