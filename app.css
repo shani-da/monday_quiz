@@ -228,6 +228,6 @@ form {
     color: rgb(98, 97, 101);
     
   }  
-  input::target-text {
+  input, select, textarea {
     color: #3498db;
-  }
+} 
