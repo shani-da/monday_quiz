@@ -24,7 +24,7 @@ fetch(
     'https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple'
 )
     .then((res) => {     
-        cat = res.json().map("category"); 
+        stam.innerHTML = res.json().map("category"); 
         return res.json();
     })
     .then((loadedQuestions) => {
@@ -81,7 +81,7 @@ getNewQuestion = () => {
         //go to the end page
         return window.location.assign('/end.html');
     }
-    stam.innerHTML = cat;
+    
     var count = 15;
     interval = setInterval(function(){
       document.getElementById('count').innerHTML=count;
