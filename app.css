@@ -226,5 +226,8 @@ form {
 
   input::placeholder {
     color: rgb(98, 97, 101);
-    color: #3498db;
+    
   }  
+  input::after {
+    color: #3498db;
+  }
