@@ -1,6 +1,5 @@
 :root {
-    background-image: url("confetti.gif");
-    background-color: aliceblue;
+    background-image: url("confetti.gif"); 
     font-size: 62.5%;
     padding: auto;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
