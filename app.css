@@ -46,6 +46,8 @@ h1 {
     font-size: 5.4rem;
     color: rgb(4, 79, 79);
     margin-bottom: 5rem;
+    text-shadow: -0.5px -0.5px 0 rgb(250, 248, 248), 0.5px -0.5px 0 rgb(250, 248, 248), -0.5px 0.5px 0 rgb(250, 248, 248), 0.5px 0.5px 0 rgb(250, 248, 248);
+
 }
 
 h1>span {
