@@ -8,9 +8,9 @@ const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 const MAX_HIGH_SCORES = 5;
 
 finalScore.innerText = mostRecentScore;
-if (mostRecentScore>0){
+
     startConfetti();
-}
+
 username.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !username.value;
 });
