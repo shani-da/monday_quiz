@@ -16,7 +16,7 @@ let availableQuesions = [];
 
 let questions = [];
 let q;
-const cat;
+//let cat;
 
 
 
