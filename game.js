@@ -16,20 +16,22 @@ let availableQuesions = [];
 
 let questions = [];
 let q;
+let cat;
 
 
 
 fetch(
     'https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple'
 )
-    .then((res) => {      
+    .then((res) => {     
+        cat = res.json().map("category"); 
         return res.json();
     })
     .then((loadedQuestions) => {
  
         questions = loadedQuestions.results.map((loadedQuestion) => {
             const formattedQuestion = {
-                stam: loadedQuestion.stam,               
+                               
                 question: loadedQuestion.question.replace(/(&quot\;)/g,"\"").replace(/(&#039\;)/g,"\'").replace(/(&amp\;)/g,"&")
                 .replace(/(&deg\;)/g,"°").replace(/(&rsquo\;)/g,"\'").replace(/(&shy\;)/g,"-").replace(/(&Eacute\;)/g,"É").replace(/(&ntilde\;)/g,"ñ"),
             };
@@ -79,6 +81,7 @@ getNewQuestion = () => {
         //go to the end page
         return window.location.assign('/end.html');
     }
+    stam.innerHTML = cat;
     var count = 15;
     interval = setInterval(function(){
       document.getElementById('count').innerHTML=count;
