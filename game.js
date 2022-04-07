@@ -33,7 +33,7 @@ fetch(
             const formattedQuestion = {
                 question: loadedQuestion.question.replace(/(&quot\;)/g,"\"").replace(/(&#039\;)/g,"\'").replace(/(&amp\;)/g,"&")
                 .replace(/(&deg\;)/g,"°").replace(/(&rsquo\;)/g,"\'").replace(/(&shy\;)/g,"-").replace(/(&Eacute\;)/g,"É").replace(/(&ntilde\;)/g,"ñ"),
-                stam: loadedQuestion.category,
+      //          stam: loadedQuestion.category,
             };
 //try
             
