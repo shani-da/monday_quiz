@@ -40,6 +40,8 @@ h2 {
   
   .incorrect {
     background-color: #ec5151;
+    color: red;
+    text-decoration-color: #ec5151;
   }
 
   /* HUD */
