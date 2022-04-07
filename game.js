@@ -36,7 +36,7 @@ fetch(
                 stam: loadedQuestion.category,
             };
 //try
-            const cat = loadedQuestion.category;    
+            
             const answerChoices = [...loadedQuestion.incorrect_answers];
             formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
             answerChoices.splice(
@@ -87,7 +87,6 @@ getNewQuestion = () => {
     interval = setInterval(function(){
       document.getElementById('count').innerHTML=count;
       count--;
-      stam.innerHTML = cat;
       if (count === -2){
         document.getElementById('count').innerHTML=15;
         getNewQuestion();
