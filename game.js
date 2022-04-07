@@ -21,13 +21,14 @@ fetch(
     'https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple'
 )
     .then((res) => {
-        return res.json();
+        return res.json().stringify(json).replace("'", "\'");
     })
     .then((loadedQuestions) => {
         questions = loadedQuestions.results.map((loadedQuestion) => {
             const formattedQuestion = {
                 
-                question: loadedQuestion.question.replace("'","\'"),
+                question: loadedQuestion.question
+                replace("'","\'"),
             };
 
             const answerChoices = [...loadedQuestion.incorrect_answers];
