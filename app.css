@@ -99,7 +99,7 @@ p {
     margin:  0 auto;
     margin-top: 1rem;
     margin-bottom: 10rem;
-
+    vertical-align: middle;
     background-image: url("grass.jpg");
     background-size:cover;
     box-shadow : 0 5px 20px rgba(0,0,0,0.5);
