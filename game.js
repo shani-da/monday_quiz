@@ -35,7 +35,7 @@ fetch(
                 question: loadedQuestion.question.replace(/(&quot\;)/g,"\"").replace(/(&#039\;)/g,"\'").replace(/(&amp\;)/g,"&")
                 .replace(/(&deg\;)/g,"°").replace(/(&rsquo\;)/g,"\'").replace(/(&shy\;)/g,"-").replace(/(&Eacute\;)/g,"É").replace(/(&ntilde\;)/g,"ñ"),
             };
-            stam.innerHTML = category;
+            
             const answerChoices = [...loadedQuestion.incorrect_answers];
             formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
             answerChoices.splice(
@@ -64,6 +64,7 @@ const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 5;
 
 startGame = () => {
+    document.getElementById("stam").innerHTML = category;
     questionCounter = 0;
     score = 0;
     availableQuesions = [...questions];
