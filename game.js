@@ -24,7 +24,7 @@ fetch(
     'https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple'
 )
     .then((res) => {     
-        stam.innerHTML = res.json().map("category"); 
+        stam.innerHTML = res.json("category"); 
         return res.json();
     })
     .then((loadedQuestions) => {
