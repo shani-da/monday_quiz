@@ -83,7 +83,6 @@ p {
     padding: 1rem;
     background-color: whitesmoke;
     background-image: url("sky.jpg");
-    background-size:40%;
 }
 
 .container2 > * {
