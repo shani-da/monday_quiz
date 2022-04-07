@@ -16,7 +16,7 @@ let availableQuesions = [];
 
 let questions = [];
 let q;
-let cat;
+
 
 
 
@@ -34,7 +34,8 @@ fetch(
                 question: loadedQuestion.question.replace(/(&quot\;)/g,"\"").replace(/(&#039\;)/g,"\'").replace(/(&amp\;)/g,"&")
                 .replace(/(&deg\;)/g,"°").replace(/(&rsquo\;)/g,"\'").replace(/(&shy\;)/g,"-").replace(/(&Eacute\;)/g,"É").replace(/(&ntilde\;)/g,"ñ"),
             };
-            cat = [...loadedQuestion.category];
+//try
+            const cat = [...loadedQuestion.category];
             const answerChoices = [...loadedQuestion.incorrect_answers];
             formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
             answerChoices.splice(
@@ -50,7 +51,7 @@ fetch(
             });
 
             return formattedQuestion;
-        });
+        })
         stam.innerHTML = cat;
         startGame();
     })
