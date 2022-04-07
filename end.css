@@ -2,7 +2,7 @@
     background-image: url("confetti.gif"); 
     font-size: 62.5%;
     padding: auto;
-    background: linear-gradient(-45deg, #ece00c, #ece00c, #ece00c,#ee7752, #e73c7e,#ec0cdd,#a02aee,#3223d5 , #23a6d5, #23d5ab, #ece00c, #ece00c,#ece00c);
+    background: linear-gradient(-45deg, #ece00c, #ece00c,#ee7752, #e73c7e,#ec0cdd,#a02aee,#3223d5 , #23a6d5, #23d5ab, #ece00c,#ece00c);
     background-size: 400% 400%;
     animation: gradient 2s infinite;
 
