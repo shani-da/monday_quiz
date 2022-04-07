@@ -18,7 +18,7 @@ h2 {
     box-shadow: 0 0.4rem 1.4rem 0 rgba(46, 177, 243, 0.5);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
-    background-color: rgb(15, 165, 235);
+    opacity:1;
   }
   
   .choice-prefix {
@@ -35,13 +35,11 @@ h2 {
 
   .correct {
     background-color: #93d7a3;
-    color: green;
+  
   }
   
   .incorrect {
-    background-color: #ec5151;
-    color: red;
-    text-decoration-color: #ec5151;
+    background-color: #ec5151;;
   }
 
   /* HUD */
