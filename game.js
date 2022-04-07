@@ -28,7 +28,7 @@ fetch(
             const formattedQuestion = {
                 
                 question: loadedQuestion.question.replace(/(&quot\;)/g,"\"").replace(/(&#039\;)/g,"\'").replace(/(&amp\;)/g,"&")
-                .replace(/(&deg\;)/g,"°"),
+                .replace(/(&deg\;)/g,"°").replace(/(&rsquo\;)/g,"\'"),
             };
 
             const answerChoices = [...loadedQuestion.incorrect_answers];
@@ -36,7 +36,8 @@ fetch(
             answerChoices.splice(
                 formattedQuestion.answer - 1,
                 0,
-                loadedQuestion.correct_answer
+                loadedQuestion.correct_answer.replace(/(&quot\;)/g,"\"").replace(/(&#039\;)/g,"\'").replace(/(&amp\;)/g,"&")
+                .replace(/(&deg\;)/g,"°").replace(/(&rsquo\;)/g,"\'")
             );
 
             answerChoices.forEach((choice, index) => {
