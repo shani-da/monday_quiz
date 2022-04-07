@@ -52,11 +52,14 @@ h2 {
     font-size: 2rem;
   }
   
+  .hud-prefix.choice-container:hover {
+    color: #1885f2;
+  }
   .hud-main-text {
     text-align: center;
     color: #21adc6;
     text-shadow: -0.25px -0.25px 0 rgb(250, 248, 248), 0.25px -0.25px 0 rgb(250, 248, 248), -0.25px 0.25px 0 rgb(250, 248, 248), 0.25px 0.25px 0 rgb(250, 248, 248);
-  }
+  } 
   p {
     color:rgb(26, 26, 26);
     font-weight: bold;
