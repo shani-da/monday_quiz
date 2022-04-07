@@ -27,7 +27,7 @@ fetch(
         questions = loadedQuestions.results.map((loadedQuestion) => {
             const formattedQuestion = {
                 
-                question: loadedQuestion.question.replace(/(&quot\;)/g,"\""),
+                question: loadedQuestion.question.replace(/(&quot\;)/g,"\"").replace(/(&#039\;)/g,"\'"),
             };
 
             const answerChoices = [...loadedQuestion.incorrect_answers];
