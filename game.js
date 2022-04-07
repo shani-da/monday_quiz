@@ -21,7 +21,7 @@ fetch(
     'https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple'
 )
     .then((res) => {
-        return JSON.stringify(res.json()).replace("'", "\'");
+        return res.json().stringify.replace(/'/g, "\\'");
     })
     .then((loadedQuestions) => {
         questions = loadedQuestions.results.map((loadedQuestion) => {
