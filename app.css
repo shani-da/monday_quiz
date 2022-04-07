@@ -104,7 +104,7 @@ p {
     margin-bottom: 10rem;
 
     background-image: url("grass.jpg");
-    background-size: auto;
+    background-size: 50%;
     box-shadow : 0 5px 20px rgba(0,0,0,0.5);
     padding: 5rem;
     background-color: whitesmoke;
