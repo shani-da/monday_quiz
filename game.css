@@ -15,7 +15,7 @@ h2 {
   
   .choice-container:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(46, 177, 243, 0.5);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
   }
@@ -52,9 +52,7 @@ h2 {
     font-size: 2rem;
   }
   
-  .hud-prefix.choice-container:hover {
-    color: #1885f2;
-  }
+  
   .hud-main-text {
     text-align: center;
     color: #21adc6;
