@@ -223,7 +223,9 @@ form {
     border: none;
     box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
   }
-  
+  form::placeholder {
+    color: rgb(53, 51, 51);
+  }  
   input::placeholder {
     color: rgb(53, 51, 51);
   }  
