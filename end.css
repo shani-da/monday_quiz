@@ -1,3 +1,7 @@
+:root {
+    background-image: url("confetti.gif");
+}
+
 .container2 {
     background-image: url("confetti.gif"), url("sky.jpg");
     
