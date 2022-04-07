@@ -2,9 +2,7 @@
     background-color: aliceblue;
     font-size: 62.5%;
     padding: auto;
-    background: linear-gradient(-45deg, #f3ee91, #f3ee91, #f3ee91,#e69b84, #e56e9b,#e881e1,#c891ed,#9189e9 , #77c1dd, #74e8cd, #f3ee91, #f3ee91,#f3ee91);
-    background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
+    background-image: url("starry.gif");
 
     width:100%;
     height:100%;
