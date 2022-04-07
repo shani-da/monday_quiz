@@ -60,7 +60,7 @@ h2 {
   p {
     color:rgb(26, 26, 26);
     font-weight: bold;
-    text-shadow: -0.25px -0.25px 0 rgb(250, 248, 248), 0.25px -0.25px 0 rgb(250, 248, 248), -0.25px 0.25px 0 rgb(250, 248, 248), 0.25px 0.25px 0 rgb(250, 248, 248);
+    text-shadow: -0.4px -0.4px 0 rgb(250, 248, 248), 0.4px -0.4px 0 rgb(250, 248, 248), -0.4px 0.4px 0 rgb(250, 248, 248), 0.4px 0.4px 0 rgb(250, 248, 248);
     
   }
 
