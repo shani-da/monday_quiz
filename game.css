@@ -18,7 +18,7 @@ h2 {
     box-shadow: 0 0.4rem 1.4rem 0 rgba(46, 177, 243, 0.5);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
-    opacity:0.1;
+    opacity:0.5;
   }
   
   .choice-prefix {
