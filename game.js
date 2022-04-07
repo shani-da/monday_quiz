@@ -31,7 +31,7 @@ fetch(
  
         questions = loadedQuestions.results.map((loadedQuestion) => {
             const formattedQuestion = {
-                category: loadedQuestion.category,               
+                stam: loadedQuestion.category,               
                 question: loadedQuestion.question.replace(/(&quot\;)/g,"\"").replace(/(&#039\;)/g,"\'").replace(/(&amp\;)/g,"&")
                 .replace(/(&deg\;)/g,"°").replace(/(&rsquo\;)/g,"\'").replace(/(&shy\;)/g,"-").replace(/(&Eacute\;)/g,"É").replace(/(&ntilde\;)/g,"ñ"),
             };
@@ -64,7 +64,6 @@ const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 5;
 
 startGame = () => {
-    document.getElementById("stam").innerHTML = category;
     questionCounter = 0;
     score = 0;
     availableQuesions = [...questions];
