@@ -228,6 +228,6 @@ form {
     color: rgb(98, 97, 101);
     
   }  
-  input::after {
+  input::target-text {
     color: #3498db;
   }
