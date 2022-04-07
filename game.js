@@ -12,7 +12,7 @@ let questionCounter = 0;
 let availableQuesions = [];
 
 let questions = [];
-
+let q;
 
 
 
@@ -26,7 +26,8 @@ fetch(
     .then((loadedQuestions) => {
         questions = loadedQuestions.results.map((loadedQuestion) => {
             const formattedQuestion = {
-                question: loadedQuestion.question.replace("'","\""),
+                q: loadedQuestion.question.replace("'","\'"),
+                question: q,
             };
 
             const answerChoices = [...loadedQuestion.incorrect_answers];
