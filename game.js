@@ -31,8 +31,7 @@ fetch(
                 .replace(/(&deg\;)/g,"°").replace(/(&rsquo\;)/g,"\'"),
             };
 
-            const answerChoices = [...loadedQuestion.incorrect_answers.replace(/(&quot\;)/g,"\"").replace(/(&#039\;)/g,"\'").replace(/(&amp\;)/g,"&")
-            .replace(/(&deg\;)/g,"°").replace(/(&rsquo\;)/g,"\'")];
+            const answerChoices = [...loadedQuestion.incorrect_answers];
             formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
             answerChoices.splice(
                 formattedQuestion.answer - 1,
@@ -42,7 +41,8 @@ fetch(
             );
 
             answerChoices.forEach((choice, index) => {
-                formattedQuestion['choice' + (index + 1)] = choice;
+                formattedQuestion['choice' + (index + 1)] = choice.replace(/(&quot\;)/g,"\"").replace(/(&#039\;)/g,"\'").replace(/(&amp\;)/g,"&")
+                .replace(/(&deg\;)/g,"°").replace(/(&rsquo\;)/g,"\'");
             });
 
             return formattedQuestion;
