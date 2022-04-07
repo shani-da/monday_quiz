@@ -55,7 +55,7 @@ h2 {
   .hud-main-text {
     text-align: center;
     color: #7613ce;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-shadow: -1px -1px 0 rgb(250, 248, 248), 1px -1px 0 rgb(250, 248, 248), -1px 1px 0 rgb(250, 248, 248), 1px 1px 0 rgb(250, 248, 248);
   }
   p {
     color:rgb(26, 26, 26);
