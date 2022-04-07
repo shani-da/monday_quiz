@@ -83,6 +83,7 @@ p {
     padding: 1rem;
     background-color: whitesmoke;
     background-image: url("wall.jpg");
+    background-size:20%;
 }
 
 .container2 > * {
