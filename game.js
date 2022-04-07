@@ -24,18 +24,17 @@ fetch(
     'https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple'
 )
     .then((res) => {     
-        
+        cat = res.json()["resuls"];
         return res.json();
     })
     .then((loadedQuestions) => {
  
         questions = loadedQuestions.results.map((loadedQuestion) => {
             const formattedQuestion = {
-                               
                 question: loadedQuestion.question.replace(/(&quot\;)/g,"\"").replace(/(&#039\;)/g,"\'").replace(/(&amp\;)/g,"&")
                 .replace(/(&deg\;)/g,"°").replace(/(&rsquo\;)/g,"\'").replace(/(&shy\;)/g,"-").replace(/(&Eacute\;)/g,"É").replace(/(&ntilde\;)/g,"ñ"),
             };
-            
+            cat = [...loadedQuestion.category];
             const answerChoices = [...loadedQuestion.incorrect_answers];
             formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
             answerChoices.splice(
@@ -52,7 +51,7 @@ fetch(
 
             return formattedQuestion;
         });
-
+        stam.innerHTML = cat;
         startGame();
     })
     .catch((err) => {
