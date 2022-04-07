@@ -89,7 +89,7 @@ getNewQuestion = () => {
     }, 1000);
 
     questionCounter++;
-    progressText.innerText = `Q u e s t i o n  ${questionCounter} / ${MAX_QUESTIONS}`;
+    progressText.innerText = `Q u e s t i o n   ${questionCounter} / ${MAX_QUESTIONS}`;
     //Update the progress bar
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
