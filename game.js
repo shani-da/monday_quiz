@@ -112,7 +112,7 @@ getNewQuestion = () => {
     question.innerText = currentQuestion.question;
     
 
-    if (currentQuestion.correct_answer == "False" || currentQuestion.correct_answer == "True") {
+    if (currentQuestion.type == "boolean") {
         document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
     }
