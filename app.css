@@ -142,10 +142,9 @@ p {
     border: 0.1rem solid #24b59d;
     margin-bottom: 1rem;
     text-decoration: none;
-    color: #24b59d;
+    color: #45ceb7;
     background-color: white;
   }
-  
   .btn:hover, .btn:focus {
     color: #3498db;
     outline: 0;
