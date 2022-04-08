@@ -101,7 +101,7 @@ getNewQuestion = () => {
     currentQuestion = availableQuesions[questionIndex];
     question.innerText = currentQuestion.question;
 
-    document.querySelector("#st").innerHTML = 'category: $(currentQuestion.results[0].category'
+    document.querySelector("#st").innerHTML = 'category: ${currentQuestion.results.category}';
 
     choices.forEach((choice) => {
         const number = choice.dataset['number'];
