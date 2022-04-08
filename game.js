@@ -118,6 +118,15 @@ getNewQuestion = () => {
     else if (currentQuestion.category == "Entertainment: Music"){
         document.getElementById("cont").style.backgroundImage = "url('music.jpg')";
     }
+    else if (currentQuestion.category == "Entertainment: Musicals & Theatres"){
+        document.getElementById("cont").style.backgroundImage = "url('theater.jpg')";
+    }
+    else if (currentQuestion.category == "Entertainment: Television"){
+        document.getElementById("cont").style.backgroundImage = "url('tv.jpg')";
+    }
+    else if (currentQuestion.category == "Entertainment: Video Games"){
+        document.getElementById("cont").style.backgroundImage = "url('games.jpg')";
+    }
     else if (currentQuestion.category == "Science & Nature" || currentQuestion.category == "Animals"){
         document.getElementById("cont").style.backgroundImage = "url('animals.jpg')";
     }
