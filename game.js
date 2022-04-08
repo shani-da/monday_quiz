@@ -107,7 +107,7 @@ getNewQuestion = () => {
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
     currentQuestion = availableQuesions[questionIndex];
     question.innerText = currentQuestion.question;
-    temp = currentQuestion.get("type");
+    temp = currentQuestion["type"];
 
 // category      
        
