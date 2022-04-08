@@ -18,7 +18,7 @@ let availableQuesions = [];
 let questions = [];
 let q;
 let cat = "uf";
-let temp;
+let temp = {};
 
 fetch(
     'https://opentdb.com/api.php?amount=100'
