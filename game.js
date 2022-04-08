@@ -137,7 +137,7 @@ getNewQuestion = () => {
         document.getElementById("cont").style.backgroundImage = "url('computer.webp')";
     }
     else if (currentQuestion.category == "Science: Mathematics"){
-        document.getElementById("cont").style.backgroundImage = "url('math.avif')";
+        document.getElementById("cont").style.backgroundImage = "url('math.jpg')";
     }
     else if (currentQuestion.category == "Mythology"){
         document.getElementById("cont").style.backgroundImage = "url('mythology.jpg')";
