@@ -30,7 +30,7 @@ fetch(
         questions = loadedQuestions.results.map((loadedQuestion) => {
             const formattedQuestion = {
              //cat
-        //        category: loadedQuestion.category,
+               category: loadedQuestion.category,
                 question: loadedQuestion.question.replace(/(&quot\;)/g,"\"").replace(/(&#039\;)/g,"\'").replace(/(&amp\;)/g,"&")
                 .replace(/(&deg\;)/g,"°").replace(/(&rsquo\;)/g,"\'").replace(/(&shy\;)/g,"-").replace(/(&Eacute\;)/g,"É").replace(/(&ntilde\;)/g,"ñ"),
             };
@@ -103,7 +103,7 @@ getNewQuestion = () => {
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
     currentQuestion = availableQuesions[questionIndex];
     //question.innerText = currentQuestion.question;
-    question.innerText = cat;
+    question.innerText = currentQuestion.category;
 // category      
 
     choices.forEach((choice) => {
