@@ -105,7 +105,7 @@ getNewQuestion = () => {
     question.innerText = currentQuestion.category;
     
 // category      
-    if (currentQuestion.category == "Science & Nature"){
+    if (currentQuestion.category == "Science & Nature" || currentQuestion.category == "Animals"){
         document.getElementById("cont").style.backgroundImage = "url('animals.jpg')";
     }
 
