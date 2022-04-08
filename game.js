@@ -80,11 +80,7 @@ getNewQuestion = () => {
     
     //el.innerHTML = typeof (document.getElementById('choice4'));
     
-    if (currentQuestion.correct_answer == "False" || currentQuestion.correct_answer == "True") {
-        document.getElementById('choice3').style.display = 'none';
-        document.getElementById('choice4').style.visibility='hidden';
-    }
-
+    
     if(interval){
         clearInterval(interval);
     }
@@ -115,6 +111,12 @@ getNewQuestion = () => {
     currentQuestion = availableQuesions[questionIndex];
     question.innerText = currentQuestion.question;
     
+
+    if (currentQuestion.correct_answer == "False" || currentQuestion.correct_answer == "True") {
+        document.getElementById('choice3').style.display = 'none';
+        document.getElementById('choice4').style.visibility='hidden';
+    }
+
 // category      
        
     if (currentQuestion.category == "General Knowledge"){
