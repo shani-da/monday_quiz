@@ -80,7 +80,7 @@ getNewQuestion = () => {
     
     //el.innerHTML = typeof (document.getElementById('choice4'));
     
-    if (currentQuestion.correct_answer == "False") {
+    if (currentQuestion.correct_answer == "False" || currentQuestion.correct_answer == "True") {
         document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
     }
