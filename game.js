@@ -136,6 +136,9 @@ getNewQuestion = () => {
     else if (currentQuestion.category == "Science: Computers"){
         document.getElementById("cont").style.backgroundImage = "url('computer.webp')";
     }
+    else if (currentQuestion.category == "Science: Mathematics"){
+        document.getElementById("cont").style.backgroundImage = "url('math.avif')";
+    }
     else if (currentQuestion.category == "Mythology"){
         document.getElementById("cont").style.backgroundImage = "url('mythology.jpg')";
     }
@@ -151,14 +154,28 @@ getNewQuestion = () => {
     else if (currentQuestion.category == "Politics"){
         document.getElementById("cont").style.backgroundImage = "url('politics.webp')";
     }
-    
-    
-    
-    else if (currentQuestion.category == "Science: Mathematics"){
-        document.getElementById("cont").style.backgroundImage = "url('math.avif')";
+    else if (currentQuestion.category == "Art"){
+        document.getElementById("cont").style.backgroundImage = "url('art.jpg')";
     }
-    
-    else if (currentQuestion.category == "Science & Nature" || currentQuestion.category == "Animals"){
+    else if (currentQuestion.category == "celebrities"){
+        document.getElementById("cont").style.backgroundImage = "url('celeb.png')";
+    }
+    else if (currentQuestion.category == "Vehicles"){
+        document.getElementById("cont").style.backgroundImage = "url('vehicles.png')";
+    }
+    else if (currentQuestion.category == "celebrities"){
+        document.getElementById("cont").style.backgroundImage = "url('celeb.png')";
+    }
+    else if (currentQuestion.category == "Entertainment: Comics"){
+        document.getElementById("cont").style.backgroundImage = "url('comics.jpg')";
+    }
+    else if (currentQuestion.category == "Science: Gadgets"){
+        document.getElementById("cont").style.backgroundImage = "url('gadgets.jpg')";
+    }
+    else if (currentQuestion.category == "Entertainment: Cartoon & Animaions"){
+        document.getElementById("cont").style.backgroundImage = "url('cartoon.jpg')";
+    }
+    else if (currentQuestion.category == "Animals"){
         document.getElementById("cont").style.backgroundImage = "url('animals.jpg')";
     }
 
