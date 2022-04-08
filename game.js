@@ -193,7 +193,7 @@ getNewQuestion = () => {
     //el.innerHTML = typeof (document.getElementById('choice4'));
 
 
-    if(isEmpty(el)) {
+    if(jQuery.isEmptyObject(el)) {
         document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
     }
