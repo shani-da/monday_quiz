@@ -136,9 +136,24 @@ getNewQuestion = () => {
     else if (currentQuestion.category == "Science: Computers"){
         document.getElementById("cont").style.backgroundImage = "url('computer.webp')";
     }
+    else if (currentQuestion.category == "Mythology"){
+        document.getElementById("cont").style.backgroundImage = "url('mythology.jpg')";
+    }
+    else if (currentQuestion.category == "Sports"){
+        document.getElementById("cont").style.backgroundImage = "url('sports.jpg')";
+    }
+    else if (currentQuestion.category == "Geography"){
+        document.getElementById("cont").style.backgroundImage = "url('geography.png')";
+    }
+    else if (currentQuestion.category == "History"){
+        document.getElementById("cont").style.backgroundImage = "url('history.jpg')";
+    }
+    
+    
     else if (currentQuestion.category == "Science: Mathematics"){
         document.getElementById("cont").style.backgroundImage = "url('math.avif')";
     }
+    
     else if (currentQuestion.category == "Science & Nature" || currentQuestion.category == "Animals"){
         document.getElementById("cont").style.backgroundImage = "url('animals.jpg')";
     }
