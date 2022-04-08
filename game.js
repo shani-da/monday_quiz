@@ -76,9 +76,6 @@ startGame = () => {
 };
 var interval;
 getNewQuestion = () => {
-        //check if true false question
-    
-    //el.innerHTML = typeof (document.getElementById('choice4'));
     
     
     if(interval){
@@ -195,8 +192,11 @@ getNewQuestion = () => {
     availableQuesions.splice(questionIndex, 1);
     acceptingAnswers = true;
 
-
-    document.getElementById('choice3').innerText = currentQuestion.type;
+    //check if true false question
+    
+    //el.innerHTML = typeof (document.getElementById('choice4'));
+    
+   // document.getElementById('choice3').innerText = currentQuestion.type;
     if (currentQuestion.correct_answer == "True"){
     //    document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
