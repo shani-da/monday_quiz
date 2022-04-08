@@ -48,6 +48,7 @@ fetch(
                 .replace(/(&deg\;)/g,"°").replace(/(&rsquo\;)/g,"\'").replace(/(&shy\;)/g,"-").replace(/(&Eacute\;)/g,"É").replace(/(&ntilde\;)/g,"ñ");
             });
 
+            formattedQuestion.cat = loadedQuestion.category;
             return formattedQuestion;
         })
         
@@ -100,8 +101,8 @@ getNewQuestion = () => {
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
     currentQuestion = availableQuesions[questionIndex];
     question.innerText = currentQuestion.question;
-
-    document.querySelector("#st").innerHTML = 'category: ${currentQuestion.results.category}';
+// category
+    stam.innerText = currentQuestion.cat;
 
     choices.forEach((choice) => {
         const number = choice.dataset['number'];
