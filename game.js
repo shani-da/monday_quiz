@@ -192,7 +192,7 @@ getNewQuestion = () => {
     
     //el.innerHTML = typeof (document.getElementById('choice4'));
 
-
+    document.getElementById('choice3').innerHTML = toString(el);
     if(toString(el)=="undefined") {
         document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
