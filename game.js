@@ -189,9 +189,10 @@ getNewQuestion = () => {
 
     //check if true false question
     let el = document.getElementById('choice3');
-    el.innerHTML = typeof (document.getElementById('choice4'));
-    
-    if(choices[0] == undefined || choices[2] == null) {
+    //el.innerHTML = typeof (document.getElementById('choice4'));
+    const isEmpty = Object.keys(el).length === 0;
+
+    if(isEmpty) {
         document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
     }
