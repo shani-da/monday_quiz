@@ -148,6 +148,10 @@ getNewQuestion = () => {
     else if (currentQuestion.category == "History"){
         document.getElementById("cont").style.backgroundImage = "url('history.jpg')";
     }
+    else if (currentQuestion.category == "Politics"){
+        document.getElementById("cont").style.backgroundImage = "url('politics.webp')";
+    }
+    
     
     
     else if (currentQuestion.category == "Science: Mathematics"){
