@@ -183,7 +183,7 @@ getNewQuestion = () => {
     
 
     let el = document.getElementById('choice3')
-    if(flag === false) {
+    if(el === undefined) {
         document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
     }
