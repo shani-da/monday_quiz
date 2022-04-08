@@ -111,8 +111,8 @@ getNewQuestion = () => {
     currentQuestion = availableQuesions[questionIndex];
     question.innerText = currentQuestion.question;
     
-
-    if (document.getElementById('choice3').innerText.toString == "undefined"){
+    document.getElementById('choice3').innerText = currentQuestion.type;
+    if (1){
         document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
     }
