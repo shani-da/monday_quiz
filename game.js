@@ -112,7 +112,7 @@ getNewQuestion = () => {
     question.innerText = currentQuestion.question;
     
 
-    if (currentQuestion.type == "boolean") {
+    if (document.getElementById('choice3').innerText.toString.localeCompare("undefined")){
         document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
     }
