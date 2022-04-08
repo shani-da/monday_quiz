@@ -196,8 +196,8 @@ getNewQuestion = () => {
     acceptingAnswers = true;
 
 
-    document.getElementById('choice3').innerText = currentQuestion.type.innerText;
-    if (1){
+    document.getElementById('choice3').innerText = currentQuestion.type;
+    if (currentQuestion.type == "boolean"){
     //    document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
     }
