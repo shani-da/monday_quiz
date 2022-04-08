@@ -102,9 +102,14 @@ getNewQuestion = () => {
 
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
     currentQuestion = availableQuesions[questionIndex];
-    //question.innerText = currentQuestion.question;
-    question.innerText = currentQuestion.category;
+    question.innerText = currentQuestion.question;
+    
 // category      
+    if (currentQuestion.category == "Science & Nature"){
+        document.getElementById("cont").style.backgroundImage = "url('animals.jpg')";
+    }
+
+
 
     choices.forEach((choice) => {
         const number = choice.dataset['number'];
