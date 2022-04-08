@@ -175,10 +175,10 @@ getNewQuestion = () => {
     acceptingAnswers = true;
 
     //check if true false question
-    if(!document.getElementById('choice3')){
+    let element = document.getElementById('choice3')
+    if(typeof(element) == 'undefined'){
         document.getElementById('choice3').style.visibility='hidden';
         document.getElementById('choice4').style.visibility='hidden';
-    
     }
 };
 
