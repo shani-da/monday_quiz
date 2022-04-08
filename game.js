@@ -6,7 +6,8 @@ const progressBarFull = document.getElementById('progressBarFull');
 const loader = document.getElementById('loader');
 const game = document.getElementById('game');
 
-const stam = document.getElementById('st');
+let el = document.getElementById('choice4');
+
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -188,7 +189,7 @@ getNewQuestion = () => {
     acceptingAnswers = true;
 
     //check if true false question
-    let el = document.getElementById('choice4');
+    
     //el.innerHTML = typeof (document.getElementById('choice4'));
 
 
@@ -198,12 +199,6 @@ getNewQuestion = () => {
     }
 };
 
-function isEmpty(el) {
-    for (const property in el) {
-      return false;
-    }
-    return true;
-  }
 choices.forEach((choice) => {
     choice.addEventListener('click', (e) => {
 
@@ -238,3 +233,10 @@ picbycategory = () => {
     
 }
 
+
+function isEmpty(el) {
+    for (const property in el) {
+      return false;
+    }
+    return true;
+  }
