@@ -182,8 +182,6 @@ getNewQuestion = () => {
     choices.forEach((choice) => {
         const number = choice.dataset['number'];
         choice.innerText = currentQuestion['choice' + number];
- 
- 
     });
 
     availableQuesions.splice(questionIndex, 1);
@@ -193,7 +191,7 @@ getNewQuestion = () => {
 
 
     let el = document.getElementById('choice3');
-    if(choices[3] === undefined || choices[3] === null || choices[3] === 'undefined') {
+    if(choices[2] == undefined || choices[2] == null || choices[2] == 'undefined') {
         document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
     }
