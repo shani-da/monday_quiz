@@ -163,7 +163,7 @@ getNewQuestion = () => {
     else if (currentQuestion.category == "Vehicles"){
         document.getElementById("cont").style.backgroundImage = "url('vehicles.jpg')";
     }
-    else if (currentQuestion.category == "celebrities"){
+    else if (currentQuestion.category == "Celebrities"){
         document.getElementById("cont").style.backgroundImage = "url('celeb.png')";
     }
     else if (currentQuestion.category == "Entertainment: Comics"){
