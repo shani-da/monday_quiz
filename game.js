@@ -18,7 +18,7 @@ let availableQuesions = [];
 let questions = [];
 let q;
 let cat = "uf";
-var temp = {};
+var temp = "";
 
 fetch(
     'https://opentdb.com/api.php?amount=100'
@@ -189,8 +189,8 @@ getNewQuestion = () => {
     //el.innerHTML = typeof (document.getElementById('choice4'));
     
    // document.getElementById('choice3').innerText = currentQuestion.type;
-   temp = currentQuestion;
-    if(temp.type.innerText == "boolean"){
+   temp = currentQuestion.type;
+    if(temp == "boolean"){
     //    document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
     }
