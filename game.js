@@ -190,7 +190,7 @@ getNewQuestion = () => {
     
    // document.getElementById('choice3').innerText = currentQuestion.type;
    temp = currentQuestion;
-    if(temp.type == "boolean"){
+    if(temp.type.innerText == "boolean"){
     //    document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
     }
