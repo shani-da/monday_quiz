@@ -189,8 +189,8 @@ getNewQuestion = () => {
     //el.innerHTML = typeof (document.getElementById('choice4'));
     
    // document.getElementById('choice3').innerText = currentQuestion.type;
-   temp = currentQuestion.correct_answer.toString;
-   if (temp == "True" || temp == "False" ){
+   temp = currentQuestion.correct_answer;
+   if (String(temp) == "True" || String(temp) == "False" ){
     //    document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
     }
