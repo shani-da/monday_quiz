@@ -183,7 +183,9 @@ getNewQuestion = () => {
     //check if true false question
     
     //el.innerHTML = typeof (document.getElementById('choice4'));
-
+    document.getElementById('choice3').style.display = 'none';
+        document.getElementById('choice4').style.visibility='hidden';
+    
     
     if(currentQuestion.correct_answer == "False") {
         document.getElementById('choice3').style.display = 'none';
