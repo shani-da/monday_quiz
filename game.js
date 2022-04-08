@@ -189,7 +189,7 @@ getNewQuestion = () => {
 
     //check if true false question
     let el = document.getElementById('choice3');
-    el.innerHTML = currentQuestion[0];
+    el.innerHTML = typeof (document.getElementById('choice4'));
     
     if(choices[0] == undefined || choices[2] == null) {
         document.getElementById('choice3').style.display = 'none';
