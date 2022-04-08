@@ -163,15 +163,12 @@ getNewQuestion = () => {
     }
 
 
-    var flag = false;
-    let count_choices = 0;
+
 
     choices.forEach((choice) => {
         const number = choice.dataset['number'];
         choice.innerText = currentQuestion['choice' + number];
-        count_choices++;
-        if(count_choices == 3){
-            flag = true;
+ 
         }
     });
 
@@ -183,7 +180,7 @@ getNewQuestion = () => {
     
 
     let el = document.getElementById('choice3')
-    if(el === undefined) {
+    if(el == undefined) {
         document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
     }
