@@ -194,7 +194,7 @@ getNewQuestion = () => {
     //el.innerHTML = typeof (document.getElementById('choice4'));
 
     
-    if(toString(currentQuestion.correct_answer)== "True") {
+    if(toString(currentQuestion.correct_answer).localeCompare("True")) {
         document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
     }
