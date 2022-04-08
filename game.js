@@ -196,7 +196,7 @@ getNewQuestion = () => {
     acceptingAnswers = true;
 
 
-    document.getElementById('choice3').innerText = currentQuestion.style;
+    document.getElementById('choice3').innerText = currentQuestion.type;
     if (1){
     //    document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
