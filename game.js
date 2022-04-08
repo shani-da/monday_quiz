@@ -169,7 +169,7 @@ getNewQuestion = () => {
         const number = choice.dataset['number'];
         choice.innerText = currentQuestion['choice' + number];
  
-        }
+        
     });
 
     availableQuesions.splice(questionIndex, 1);
