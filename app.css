@@ -81,6 +81,7 @@ p {
     box-shadow : 0 5px 20px rgba(0,0,0,0.5);
     padding: 1rem;
     background-size:cover;
+    background-image: url("sky.jpg");
 }
 
 .container2 > * {
@@ -139,10 +140,10 @@ p {
     padding: 1rem 0;
     width: 20rem;
     text-align: center;
-    border: 0.1rem solid #24b59d;
+    border: 0.1rem solid #3574aa;
     margin-bottom: 1rem;
     text-decoration: none;
-    color: #45ceb7;
+    color: #56a5eb;
     background-color: white;
   }
   .btn:hover, .btn:focus {
