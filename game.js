@@ -29,6 +29,7 @@ fetch(
  
         questions = loadedQuestions.results.map((loadedQuestion) => {
             const formattedQuestion = {
+             //cat
                 category: loadedQuestion.category,
                 question: loadedQuestion.question.replace(/(&quot\;)/g,"\"").replace(/(&#039\;)/g,"\'").replace(/(&amp\;)/g,"&")
                 .replace(/(&deg\;)/g,"°").replace(/(&rsquo\;)/g,"\'").replace(/(&shy\;)/g,"-").replace(/(&Eacute\;)/g,"É").replace(/(&ntilde\;)/g,"ñ"),
@@ -48,7 +49,7 @@ fetch(
                 .replace(/(&deg\;)/g,"°").replace(/(&rsquo\;)/g,"\'").replace(/(&shy\;)/g,"-").replace(/(&Eacute\;)/g,"É").replace(/(&ntilde\;)/g,"ñ");
             });
         //cat    
-            const category = loadedQuestion.category;
+        //    const category = loadedQuestion.category;
                     
             return formattedQuestion;
         })
