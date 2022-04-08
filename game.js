@@ -162,14 +162,11 @@ getNewQuestion = () => {
         document.getElementById("cont").style.backgroundImage = "url('animals.jpg')";
     }
 
-
-
-
     choices.forEach((choice) => {
         const number = choice.dataset['number'];
         choice.innerText = currentQuestion['choice' + number];
  
-        
+ 
     });
 
     availableQuesions.splice(questionIndex, 1);
@@ -179,7 +176,7 @@ getNewQuestion = () => {
 
     
 
-    let el = document.getElementById('choice3')
+    let el = document.getElementById('choice3');
     if(el == undefined) {
         document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
