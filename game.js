@@ -163,15 +163,23 @@ getNewQuestion = () => {
     }
 
 
-
+    let count_choices=0;
 
     choices.forEach((choice) => {
         const number = choice.dataset['number'];
         choice.innerText = currentQuestion['choice' + number];
+        count_choices++;
     });
 
     availableQuesions.splice(questionIndex, 1);
     acceptingAnswers = true;
+
+    //check if true false question
+
+    if (count_choices<4){
+        document.getElementById('choice3').style.visibility='hidden';
+        document.getElementById('choice4').style.visibility='hidden';
+    }
 };
 
 choices.forEach((choice) => {
