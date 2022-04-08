@@ -43,7 +43,7 @@ fetch(
                 loadedQuestion.correct_answer.replace(/(&quot\;)/g,"\"").replace(/(&#039\;)/g,"\'").replace(/(&amp\;)/g,"&")
                 .replace(/(&deg\;)/g,"°").replace(/(&rsquo\;)/g,"\'").replace(/(&shy\;)/g,"-").replace(/(&Eacute\;)/g,"É").replace(/(&ntilde\;)/g,"ñ")
             );
-
+            
             answerChoices.forEach((choice, index) => {
                 formattedQuestion['choice' + (index + 1)] = choice.replace(/(&quot\;)/g,"\"").replace(/(&#039\;)/g,"\'").replace(/(&amp\;)/g,"&")
                 .replace(/(&deg\;)/g,"°").replace(/(&rsquo\;)/g,"\'").replace(/(&shy\;)/g,"-").replace(/(&Eacute\;)/g,"É").replace(/(&ntilde\;)/g,"ñ");
@@ -188,10 +188,10 @@ getNewQuestion = () => {
     acceptingAnswers = true;
 
     //check if true false question
-
-    el.innerHTML = typeof choices[2];
     let el = document.getElementById('choice3');
-    if(choices[2] == undefined || choices[2] == null) {
+    el.innerHTML = currentQuestion;
+    
+    if(choices[0] == undefined || choices[2] == null) {
         document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
     }
