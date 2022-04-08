@@ -18,7 +18,7 @@ let availableQuesions = [];
 let questions = [];
 let q;
 let cat = "uf";
-
+let temp;
 
 fetch(
     'https://opentdb.com/api.php?amount=100'
@@ -41,6 +41,7 @@ fetch(
             answerChoices.splice(
                 formattedQuestion.answer - 1,
                 0,
+                
                 loadedQuestion.correct_answer.replace(/(&quot\;)/g,"\"").replace(/(&#039\;)/g,"\'").replace(/(&amp\;)/g,"&")
                 .replace(/(&deg\;)/g,"°").replace(/(&rsquo\;)/g,"\'").replace(/(&shy\;)/g,"-").replace(/(&Eacute\;)/g,"É").replace(/(&ntilde\;)/g,"ñ")
             );
@@ -193,7 +194,7 @@ getNewQuestion = () => {
     //el.innerHTML = typeof (document.getElementById('choice4'));
 
     document.getElementById('choice3').innerHTML = toString(el);
-    if(toString(el)=="undefined") {
+    if(correct_answer == "True" || correct_answer == "False") {
         document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
     }
