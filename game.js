@@ -104,7 +104,7 @@ getNewQuestion = () => {
     currentQuestion = availableQuesions[questionIndex];
     question.innerText = currentQuestion.question;
 // category
-      stam.innerText = "uf";
+      stam.innerText = 5;
 
     choices.forEach((choice) => {
         const number = choice.dataset['number'];
