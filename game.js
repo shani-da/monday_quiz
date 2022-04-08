@@ -130,6 +130,15 @@ getNewQuestion = () => {
     else if (currentQuestion.category == "Entertainment: Board Games"){
         document.getElementById("cont").style.backgroundImage = "url('board.jpg')";
     }
+    else if (currentQuestion.category == "Science & Nature"){
+        document.getElementById("cont").style.backgroundImage = "url('nature.jpg')";
+    }
+    else if (currentQuestion.category == "Science: Computers"){
+        document.getElementById("cont").style.backgroundImage = "url('computer.webp')";
+    }
+    else if (currentQuestion.category == "Science: Mathematics"){
+        document.getElementById("cont").style.backgroundImage = "url('math.avif')";
+    }
     else if (currentQuestion.category == "Science & Nature" || currentQuestion.category == "Animals"){
         document.getElementById("cont").style.backgroundImage = "url('animals.jpg')";
     }
