@@ -193,8 +193,8 @@ getNewQuestion = () => {
     
     //el.innerHTML = typeof (document.getElementById('choice4'));
 
-    document.getElementById('choice3').innerHTML = toString(el);
-    if(currentQuestion.correct_answer == "True" || currentQuestion.correct_answer == "False") {
+    
+    if(toString(currentQuestion.correct_answer)== "True") {
         document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
     }
