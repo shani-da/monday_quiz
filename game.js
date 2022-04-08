@@ -180,15 +180,6 @@ getNewQuestion = () => {
     else if (currentQuestion.category == "Animals"){
         document.getElementById("cont").style.backgroundImage = "url('animals.jpg')";
     }
-
-    choices.forEach((choice) => {
-        const number = choice.dataset['number'];
-        choice.innerText = currentQuestion['choice' + number];
-    });
-
-    availableQuesions.splice(questionIndex, 1);
-    acceptingAnswers = true;
-
     //check if true false question
     
     //el.innerHTML = typeof (document.getElementById('choice4'));
@@ -198,6 +189,16 @@ getNewQuestion = () => {
         document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
     }
+
+    choices.forEach((choice) => {
+        const number = choice.dataset['number'];
+        choice.innerText = currentQuestion['choice' + number];
+    });
+
+    availableQuesions.splice(questionIndex, 1);
+    acceptingAnswers = true;
+
+
 };
 
 choices.forEach((choice) => {
