@@ -190,14 +190,20 @@ getNewQuestion = () => {
     //check if true false question
     let el = document.getElementById('choice4');
     //el.innerHTML = typeof (document.getElementById('choice4'));
-    const isEmpty = Object.keys(el).length === 0;
 
-    if(isEmpty) {
+
+    if(isEmpty(el)) {
         document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
     }
 };
 
+function isEmpty(el) {
+    for (const property in el) {
+      return false;
+    }
+    return true;
+  }
 choices.forEach((choice) => {
     choice.addEventListener('click', (e) => {
 
