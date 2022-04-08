@@ -163,7 +163,7 @@ getNewQuestion = () => {
     }
 
 
-    let count_choices=0;
+    var count_choices=0;
 
     choices.forEach((choice) => {
         const number = choice.dataset['number'];
