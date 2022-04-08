@@ -69,7 +69,6 @@ startGame = () => {
     getNewQuestion();
     game.classList.remove('hidden');
     loader.classList.add('hidden');
-    stam.innerHTML = cat;
 };
 var interval;
 getNewQuestion = () => {
@@ -103,7 +102,7 @@ getNewQuestion = () => {
     currentQuestion = availableQuesions[questionIndex];
     question.innerText = currentQuestion.question;
 
-    stam.innerText = currentQuestion.category;
+    stam.innerText = cat;
 
     choices.forEach((choice) => {
         const number = choice.dataset['number'];
