@@ -108,7 +108,7 @@ getNewQuestion = () => {
     currentQuestion = availableQuesions[questionIndex];
     question.innerText = currentQuestion.question;
     temp = currentQuestion[type];
-    el.innerText = temp;
+    
 
 // category      
        
