@@ -172,6 +172,9 @@ getNewQuestion = () => {
     else if (currentQuestion.category == "Entertainment: Cartoon & Animaions"){
         document.getElementById("cont").style.backgroundImage = "url('cartoon.jpg')";
     }
+    else if (currentQuestion.category == "Entertainment: Japanese Anime & Manga"){
+        document.getElementById("cont").style.backgroundImage = "url('manga.jpg')";
+    }
     else if (currentQuestion.category == "Animals"){
         document.getElementById("cont").style.backgroundImage = "url('animals.jpg')";
     }
