@@ -188,7 +188,7 @@ getNewQuestion = () => {
     acceptingAnswers = true;
 
     //check if true false question
-    let el = document.getElementById('choice3');
+    let el = document.getElementById('choice4');
     //el.innerHTML = typeof (document.getElementById('choice4'));
     const isEmpty = Object.keys(el).length === 0;
 
