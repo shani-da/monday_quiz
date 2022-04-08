@@ -111,11 +111,6 @@ getNewQuestion = () => {
     currentQuestion = availableQuesions[questionIndex];
     question.innerText = currentQuestion.question;
     
-    document.getElementById('choice3').innerText = currentQuestion.type;
-    if (1){
-    //    document.getElementById('choice3').style.display = 'none';
-        document.getElementById('choice4').style.visibility='hidden';
-    }
 
 // category      
        
@@ -201,6 +196,11 @@ getNewQuestion = () => {
     acceptingAnswers = true;
 
 
+    document.getElementById('choice3').innerText = currentQuestion.style;
+    if (1){
+    //    document.getElementById('choice3').style.display = 'none';
+        document.getElementById('choice4').style.visibility='hidden';
+    }
 };
 
 choices.forEach((choice) => {
@@ -218,6 +218,7 @@ choices.forEach((choice) => {
         if (classToApply === 'correct') {
             incrementScore(CORRECT_BONUS);
         }
+
 
         selectedChoice.parentElement.classList.add(classToApply);
 
