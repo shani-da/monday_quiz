@@ -4,7 +4,9 @@ p {
 h2 {
     color: rgb(16, 7, 51);
   }
-
+choice3 {
+  visibility: visible;
+}
   .container3 {
     width:auto;
     height: auto;
