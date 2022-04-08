@@ -106,7 +106,7 @@ getNewQuestion = () => {
     
 // category      
    // if (currentQuestion.category == "Science & Nature" || currentQuestion.category == "Animals"){
-    document.getElementsByClassName("container3").backgroundImage = "url('animals.jpg')";    
+    document.getElementById("cont").backgroundImage = "url('animals.jpg')";    
    
    // }
 
