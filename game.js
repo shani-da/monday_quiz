@@ -189,7 +189,7 @@ getNewQuestion = () => {
     //el.innerHTML = typeof (document.getElementById('choice4'));
     
    // document.getElementById('choice3').innerText = currentQuestion.type;
-   temp = currentQuestion.correct_answer;
+   temp = currentQuestion.correct_answer.toString;
    if (temp == "True" || temp == "False" ){
     //    document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
