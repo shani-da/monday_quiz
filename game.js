@@ -29,7 +29,6 @@ fetch(
  
         questions = loadedQuestions.results.map((loadedQuestion) => {
             const formattedQuestion = {
-                category: loadedQuestion.category,
                 question: loadedQuestion.question.replace(/(&quot\;)/g,"\"").replace(/(&#039\;)/g,"\'").replace(/(&amp\;)/g,"&")
                 .replace(/(&deg\;)/g,"°").replace(/(&rsquo\;)/g,"\'").replace(/(&shy\;)/g,"-").replace(/(&Eacute\;)/g,"É").replace(/(&ntilde\;)/g,"ñ"),
             };
@@ -47,8 +46,8 @@ fetch(
                 formattedQuestion['choice' + (index + 1)] = choice.replace(/(&quot\;)/g,"\"").replace(/(&#039\;)/g,"\'").replace(/(&amp\;)/g,"&")
                 .replace(/(&deg\;)/g,"°").replace(/(&rsquo\;)/g,"\'").replace(/(&shy\;)/g,"-").replace(/(&Eacute\;)/g,"É").replace(/(&ntilde\;)/g,"ñ");
             });
+            const category = loadedQuestion.category;
             
-            //try
         
             return formattedQuestion;
         })
