@@ -48,7 +48,24 @@ choice3 {
     transition: transform 150ms;
     opacity:0.7;
   }
+  .choice-container2 {
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 0.1rem solid rgb(86, 165, 235, 0.25);
+    background-color: #a0d1f6;
+    opacity:0.9;
+  }
   
+  .choice-container2:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 #55aef3;
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+    opacity:0.7;
+  }
+
   .choice-prefix {
     padding: 1.5rem 2.5rem;
     background-color: #143b5d;
