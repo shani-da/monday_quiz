@@ -176,7 +176,7 @@ getNewQuestion = () => {
 
     //check if true false question
     let element = document.getElementById('choice3')
-    if(element == 'undefined'){
+    if((element == 'undefined') || (count_choices<4)) {
         document.getElementsByClassName('choice-container2').visibility='hidden';
         document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
