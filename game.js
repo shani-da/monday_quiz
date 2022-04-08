@@ -30,7 +30,7 @@ fetch(
         questions = loadedQuestions.results.map((loadedQuestion) => {
             const formattedQuestion = {
              //cat
-                category: loadedQuestion.category,
+        //        category: loadedQuestion.category,
                 question: loadedQuestion.question.replace(/(&quot\;)/g,"\"").replace(/(&#039\;)/g,"\'").replace(/(&amp\;)/g,"&")
                 .replace(/(&deg\;)/g,"°").replace(/(&rsquo\;)/g,"\'").replace(/(&shy\;)/g,"-").replace(/(&Eacute\;)/g,"É").replace(/(&ntilde\;)/g,"ñ"),
             };
@@ -104,7 +104,7 @@ getNewQuestion = () => {
     currentQuestion = availableQuesions[questionIndex];
     question.innerText = currentQuestion.question;
 // category
-    stam.innerText = currentQuestion.category;
+//    stam.innerText = currentQuestion.category;
 
     choices.forEach((choice) => {
         const number = choice.dataset['number'];
