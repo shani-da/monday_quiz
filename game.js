@@ -127,6 +127,9 @@ getNewQuestion = () => {
     else if (currentQuestion.category == "Entertainment: Video Games"){
         document.getElementById("cont").style.backgroundImage = "url('games.jpg')";
     }
+    else if (currentQuestion.category == "Entertainment: Board Games"){
+        document.getElementById("cont").style.backgroundImage = "url('board.jpg')";
+    }
     else if (currentQuestion.category == "Science & Nature" || currentQuestion.category == "Animals"){
         document.getElementById("cont").style.backgroundImage = "url('animals.jpg')";
     }

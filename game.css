@@ -91,7 +91,11 @@ h2 {
     text-shadow: -0.4px -0.4px 0 rgb(250, 248, 248), 0.4px -0.4px 0 rgb(250, 248, 248), -0.4px 0.4px 0 rgb(250, 248, 248), 0.4px 0.4px 0 rgb(250, 248, 248);
     
   }
-
+  h2[id="question"] {
+    color:rgb(26, 26, 26);
+    font-weight: bold;
+    text-shadow: -0.8px -0.8px 0 rgb(250, 248, 248), 0.8px -0.8px 0 rgb(250, 248, 248), -0.8px 0.8px 0 rgb(250, 248, 248), 0.8px 0.8px 0 rgb(250, 248, 248);
+  }
   #progressBar {
     width: 20rem;
     height: 4rem;
