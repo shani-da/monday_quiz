@@ -108,7 +108,7 @@ getNewQuestion = () => {
     picbycategory(currentQuestion.category);    
     
    
-    }
+    
 
 
 
@@ -119,6 +119,7 @@ getNewQuestion = () => {
 
     availableQuesions.splice(questionIndex, 1);
     acceptingAnswers = true;
+
 };
 
 choices.forEach((choice) => {
