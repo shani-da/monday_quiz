@@ -20,7 +20,7 @@ let cat = "uf";
 
 
 fetch(
-    'https://opentdb.com/api.php?amount=10&difficulty=easy&type=multiple'
+    'https://opentdb.com/api.php?amount=100'
 )
     .then((res) => {     
         return res.json();
