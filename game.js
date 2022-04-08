@@ -176,7 +176,7 @@ getNewQuestion = () => {
 
     //check if true false question
     let element = document.getElementById('choice3')
-    if(typeof(element) == 'undefined'){
+    if(typeof(document.getElementById('choice3')) == 'undefined'){
         document.getElementById('choice3').style.visibility='hidden';
         document.getElementById('choice4').style.visibility='hidden';
     }
