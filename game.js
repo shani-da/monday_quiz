@@ -107,7 +107,7 @@ getNewQuestion = () => {
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
     currentQuestion = availableQuesions[questionIndex];
     question.innerText = currentQuestion.question;
-    
+    temp = currentQuestion.type;
 
 // category      
        
@@ -189,7 +189,7 @@ getNewQuestion = () => {
     //el.innerHTML = typeof (document.getElementById('choice4'));
     
    // document.getElementById('choice3').innerText = currentQuestion.type;
-   temp = currentQuestion.correct_answer;
+   
     if(temp == "True"){
     //    document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
