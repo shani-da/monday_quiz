@@ -102,11 +102,10 @@ getNewQuestion = () => {
 
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
     currentQuestion = availableQuesions[questionIndex];
-    question.innerText = currentQuestion.category;
+    question.innerText = currentQuestion.question;
     
 // category      
-    if (currentQuestion.category == "Science & Nature" || currentQuestion.category == "Animals"){
-     document.getElementById("cont").style.backgroundImage = "url('animals.jpg')";
+    picbycategory(currentQuestion.category);    
     
    
     }
@@ -151,3 +150,21 @@ incrementScore = (num) => {
     score += num;
     scoreText.innerText = score;
 };
+
+picbycategory = (currentQuestion) => {
+    if (currentQuestion.category == "General Knowledge"){
+        document.getElementById("cont").style.backgroundImage = "url('GeneralKnowledge.png')";
+    }  
+    else if (currentQuestion.category == "Entertainment: Books"){
+        document.getElementById("cont").style.backgroundImage = "url('books.jpg')";
+    }
+    else if (currentQuestion.category == "Entertainment: Film"){
+        document.getElementById("cont").style.backgroundImage = "url('film.png')";
+    }
+    else if (currentQuestion.category == "Entertainment: Music"){
+        document.getElementById("cont").style.backgroundImage = "url('music.jpg')";
+    }
+    else if (currentQuestion.category == "Science & Nature" || currentQuestion.category == "Animals"){
+        document.getElementById("cont").style.backgroundImage = "url('animals.jpg')";
+    }
+}
