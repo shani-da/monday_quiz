@@ -163,12 +163,15 @@ getNewQuestion = () => {
     }
 
 
-    var count_choices=0;
+    var flag = false;
 
     choices.forEach((choice) => {
         const number = choice.dataset['number'];
         choice.innerText = currentQuestion['choice' + number];
         count_choices++;
+        if(count_choices == 3){
+            flag = true;
+        }
     });
 
     availableQuesions.splice(questionIndex, 1);
@@ -179,7 +182,7 @@ getNewQuestion = () => {
     
 
     let el = document.getElementById('choice3')
-    if((document.getElementById('choice1') === String('False'))) {
+    if(flag === false) {
         document.getElementsByClassName('choice-container2').visibility='hidden';
         document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
