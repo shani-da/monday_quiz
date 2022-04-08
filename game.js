@@ -179,7 +179,7 @@ getNewQuestion = () => {
     
 
     let el = document.getElementById('choice3')
-    if((document.getElementById('choice1') == 'TRUE') || (count_choices<4)) {
+    if((document.getElementById('choice1') == 'TRUE' || 'FALSE') || (count_choices<4)) {
         document.getElementsByClassName('choice-container2').visibility='hidden';
         document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
