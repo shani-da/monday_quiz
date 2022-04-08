@@ -41,7 +41,7 @@ h2 {
   
   .choice-container:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 #55aef3);
+    box-shadow: 0 0.4rem 1.4rem 0 #55aef3;
     transform: translateY(-0.1rem);
     transition: transform 150ms;
     opacity:0.7;
