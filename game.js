@@ -16,7 +16,7 @@ let availableQuesions = [];
 
 let questions = [];
 let q;
-let cat;
+let cat = "uf";
 
 
 fetch(
@@ -104,7 +104,7 @@ getNewQuestion = () => {
     currentQuestion = availableQuesions[questionIndex];
     question.innerText = currentQuestion.question;
 // category
-      stam.innerText = 5;
+      stam.innerText = cat;
 
     choices.forEach((choice) => {
         const number = choice.dataset['number'];
