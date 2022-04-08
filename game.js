@@ -188,6 +188,7 @@ getNewQuestion = () => {
     //el.innerHTML = typeof (document.getElementById('choice4'));
     
    // document.getElementById('choice3').innerText = currentQuestion.type;
+
    if (currentQuestion.correct_answer == "True"){
     //    document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
@@ -211,7 +212,7 @@ getNewQuestion = () => {
     //    document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
     }
-};
+
 
 choices.forEach((choice) => {
     choice.addEventListener('click', (e) => {
