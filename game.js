@@ -175,10 +175,10 @@ getNewQuestion = () => {
     acceptingAnswers = true;
 
     //check if true false question
-
-    if (count_choices<4){
+    if(!document.getElementById('choice3')){
         document.getElementById('choice3').style.visibility='hidden';
         document.getElementById('choice4').style.visibility='hidden';
+    
     }
 };
 
