@@ -102,9 +102,9 @@ getNewQuestion = () => {
 
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
     currentQuestion = availableQuesions[questionIndex];
-    question.innerText = currentQuestion.question;
-// category
-      stam.innerText = cat;
+    //question.innerText = currentQuestion.question;
+    question.innerText = cat;
+// category      
 
     choices.forEach((choice) => {
         const number = choice.dataset['number'];
