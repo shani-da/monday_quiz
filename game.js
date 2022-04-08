@@ -102,7 +102,7 @@ getNewQuestion = () => {
 
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
     currentQuestion = availableQuesions[questionIndex];
-    question.innerText = currentQuestion.question;
+    question.innerText = currentQuestion.category;
     
 // category      
     if (currentQuestion.category == "Science & Nature"){
