@@ -110,7 +110,7 @@ getNewQuestion = () => {
     
     
     //check if true false question
-    temp = currentQuestion{};
+    temp = currentQuestion;
     
     
     
@@ -120,8 +120,8 @@ getNewQuestion = () => {
    
  //  if(temp == "boolean"){
     //    document.getElementById('choice3').style.display = 'none';
-   //     document.getElementById('choice4').style.visibility='hidden';
-    //}
+  //      document.getElementById('choice4').style.visibility='hidden';
+   // }
 
 // category      
     if (currentQuestion.type == "multiple"){
