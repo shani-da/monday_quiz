@@ -102,7 +102,7 @@ choice3 {
   
   .hud-main-text {
     text-align: center;
-    color: #ff4dff;
+    color: #934497;
     text-shadow: -0.25px -0.25px 0 rgb(250, 248, 248), 0.25px -0.25px 0 rgb(250, 248, 248), -0.25px 0.25px 0 rgb(250, 248, 248), 0.25px 0.25px 0 rgb(250, 248, 248);
   } 
   p {
@@ -127,7 +127,7 @@ choice3 {
   
   #progressBarFull {
     height: 3.4rem;
-    background-color: #934497;
+    background-color: #965099;
     ;
     width: 0%;
   }
