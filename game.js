@@ -117,12 +117,12 @@ getNewQuestion = () => {
     //el.innerHTML = typeof (document.getElementById('choice4'));
     
    // document.getElementById('choice3').innerText = currentQuestion.type;
- /*  
-   if(temp == "boolean"){
+   
+   if(currentQuestion.incorrect_answers.length < 2){
         document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
     }
-*/
+
 // category      
     if (currentQuestion.type == "boolean"){
         document.getElementById('choice4').style.visibility='hidden';
