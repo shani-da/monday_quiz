@@ -124,7 +124,8 @@ getNewQuestion = () => {
         document.getElementById('choice4').style.visibility='hidden';
   }
 */
-    if (currentQuestion.type == "multiple"){
+    if (currentQuestion.type == "boolean"){
+        document.getElementById('choice3').style.visibility='hidden';
         document.getElementById('choice4').style.visibility='hidden';
 }
 // category      
