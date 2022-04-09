@@ -222,7 +222,8 @@ getNewQuestion = () => {
     else if(currentQuestion.difficulty == "easy"){
             points_score = 5
     }
-        points_text = ""+points_score+" Points"
+    let temp_text = ""+points_score+" Points";
+    document.getElementById("points") = temp_text;
     
     
     choices.forEach((choice) => {
