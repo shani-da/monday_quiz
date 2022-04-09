@@ -124,7 +124,7 @@ getNewQuestion = () => {
     }
 
 // category      
-    if (currentQuestion.type == "multiple"){
+    if (currentQuestion.type == "multipleg"){
         document.getElementById('choice4').style.visibility='hidden';
     }
 
