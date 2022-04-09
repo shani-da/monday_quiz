@@ -118,13 +118,13 @@ getNewQuestion = () => {
     
    // document.getElementById('choice3').innerText = currentQuestion.type;
    
-   if(temp == "boolean"){
+ //  if(temp == "boolean"){
     //    document.getElementById('choice3').style.display = 'none';
-        document.getElementById('choice4').style.visibility='hidden';
-    }
+   //     document.getElementById('choice4').style.visibility='hidden';
+    //}
 
 // category      
-    if (currentQuestion.type == "multipleg"){
+    if (currentQuestion.type == "multiple"){
         document.getElementById('choice4').style.visibility='hidden';
     }
 
