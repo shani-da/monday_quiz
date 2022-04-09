@@ -210,17 +210,17 @@ getNewQuestion = () => {
         document.getElementById("cont").style.backgroundImage = "url('animals.jpg')";
     }
 //points by diff.
-    let points = 0;
+    let points_score = 0;
     let points_text = document.getElementById("points");
     if(currentQuestion.difficulty == "hard"){
-            points = 15
+            points_score = 15
             
     }
     else if(currentQuestion.difficulty == "medium"){
-            points = 10
+            points_score = 10
     }
     else if(currentQuestion.difficulty == "easy"){
-            points = 5
+            points_score = 5
     }
         points_text = ""+points+" Points"
     
