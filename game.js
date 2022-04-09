@@ -106,7 +106,6 @@ getNewQuestion = () => {
 
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
     currentQuestion = availableQuesions[questionIndex];
-    temp = availableQuesions[questionIndex];
     question.innerText = currentQuestion.question;
     
     
@@ -119,16 +118,17 @@ getNewQuestion = () => {
     
    // document.getElementById('choice3').innerText = currentQuestion.type;
  //      temp = currentQuestion.incorrect_answers;
-   if(temp.type == "boolean"){
+/*   if(temp.type == "boolean"){
         document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
   }
-
-// category      
- /*   if (currentQuestion.type == "boolean"){
-        document.getElementById('choice4').style.visibility='hidden';
-    }
 */
+    if (currentQuestion.type == "boolean"){
+        document.getElementById('choice4').style.visibility='hidden';
+}
+// category      
+    
+
     if (currentQuestion.category == "General Knowledge"){
         document.getElementById("cont").style.backgroundImage = "url('GeneralKnowledge.png')";
     }  
