@@ -18,7 +18,7 @@ let availableQuesions = [];
 let questions = [];
 let q;
 let cat = "uf";
-var temp = "";
+var temp = [];
 
 fetch(
     'https://opentdb.com/api.php?amount=100'
@@ -117,17 +117,17 @@ getNewQuestion = () => {
     //el.innerHTML = typeof (document.getElementById('choice4'));
     
    // document.getElementById('choice3').innerText = currentQuestion.type;
-   
-   if(currentQuestion.incorrect_answers.length < 2){
+   temp = currentQuestion.incorrect_answers;
+   if(temp.length < 2){
         document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
     }
 
 // category      
-    if (currentQuestion.type == "boolean"){
+ /*   if (currentQuestion.type == "boolean"){
         document.getElementById('choice4').style.visibility='hidden';
     }
-
+*/
     if (currentQuestion.category == "General Knowledge"){
         document.getElementById("cont").style.backgroundImage = "url('GeneralKnowledge.png')";
     }  
