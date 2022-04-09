@@ -125,7 +125,7 @@ getNewQuestion = () => {
 
 // category      
     if (currentQuestion.type == "multiple"){
-    document.getElementById("cont").style.backgroundImage = "url('sky.jpg')";
+        document.getElementById('choice4').style.visibility='hidden';
     }
 
     if (currentQuestion.category == "General Knowledge"){
