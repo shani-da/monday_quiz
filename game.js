@@ -110,7 +110,7 @@ getNewQuestion = () => {
     
     
     //check if true false question
-    temp = currentQuestion;
+    temp = currentQuestion{};
     
     
     
@@ -124,9 +124,10 @@ getNewQuestion = () => {
     }
 
 // category      
-if (currentQuestion.type == "boolean"){
+    if (currentQuestion.type == "multiple"){
     document.getElementById("cont").style.backgroundImage = "url('sky.jpg')";
-}   
+    }
+
     if (currentQuestion.category == "General Knowledge"){
         document.getElementById("cont").style.backgroundImage = "url('GeneralKnowledge.png')";
     }  
