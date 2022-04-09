@@ -209,7 +209,21 @@ getNewQuestion = () => {
     else if (currentQuestion.category == "Animals"){
         document.getElementById("cont").style.backgroundImage = "url('animals.jpg')";
     }
-
+//points by diff.
+    let points = 0;
+    let points_text = document.getElementById("points");
+    if(currentQuestion.difficulty == "hard"){
+            points = 15
+            
+    }
+    else if(currentQuestion.difficulty == "medium"){
+            points = 10
+    }
+    else if(currentQuestion.difficulty == "easy"){
+            points = 5
+    }
+        points_text = ""+points+" Points"
+    
     
     choices.forEach((choice) => {
         const number = choice.dataset['number'];
@@ -234,7 +248,6 @@ choices.forEach((choice) => {
             selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
         let points = 0;
-        let points_text = document.getElementById("points");
         if (classToApply === 'correct') {
             if(currentQuestion.difficulty == "hard"){
                 points = 15
@@ -246,7 +259,6 @@ choices.forEach((choice) => {
             else if(currentQuestion.difficulty == "easy"){
                 points = 5
             }
-            points_text = ""+points+" Points"
             incrementScore(points);
         }
 
