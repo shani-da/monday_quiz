@@ -192,7 +192,7 @@ getNewQuestion = () => {
     else if (currentQuestion.category == "Science: Gadgets"){
         document.getElementById("cont").style.backgroundImage = "url('gadgets.jpg')";
     }
-    else if (currentQuestion.category == "Entertainment: Cartoon & Animaions"){
+    else if (currentQuestion.category == "Entertainment: Cartoon & Animations"){
         document.getElementById("cont").style.backgroundImage = "url('cartoon.jpg')";
     }
     else if (currentQuestion.category == "Entertainment: Japanese Anime & Manga"){
