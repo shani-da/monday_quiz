@@ -42,7 +42,7 @@ h1,h2,h3,h4 {
 h1 {
     font-size: 5.4rem;
     color: rgb(4, 79, 79);
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     text-shadow: -0.5px -0.5px 0 rgb(250, 248, 248), 0.5px -0.5px 0 rgb(250, 248, 248), -0.5px 0.5px 0 rgb(250, 248, 248), 0.5px 0.5px 0 rgb(250, 248, 248);
 
 }
@@ -55,7 +55,7 @@ h1>span {
 h2 {
     font-size: 4.2rem;
     color: rgb(16, 7, 51);
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
     font-weight: 700;
 }
 
