@@ -246,7 +246,7 @@ choices.forEach((choice) => {
             else if(currentQuestion.difficulty == "easy"){
                 points = 5
             }
-            points_text = points+" Points"
+            points_text = ""+points+" Points"
             incrementScore(points);
         }
 
