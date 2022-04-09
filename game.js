@@ -119,7 +119,7 @@ getNewQuestion = () => {
     
    // document.getElementById('choice3').innerText = currentQuestion.type;
  //      temp = currentQuestion.incorrect_answers;
-   if(temp.incorrect_answers.length < 2){
+   if(temp.type == "boolean"){
         document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
   }
