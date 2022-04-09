@@ -201,7 +201,7 @@ getNewQuestion = () => {
     else if (currentQuestion.category == "Animals"){
         document.getElementById("cont").style.backgroundImage = "url('animals.jpg')";
     }
-//points by diff.
+//points by difficulty
     let points_score = 0;
    
     if(currentQuestion.difficulty == "hard"){
@@ -227,6 +227,8 @@ getNewQuestion = () => {
     acceptingAnswers = true;
 
 };
+
+//choice on click
 
 choices.forEach((choice) => {
     choice.addEventListener('click', (e) => {
