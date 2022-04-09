@@ -31,6 +31,7 @@ fetch(
         questions = loadedQuestions.results.map((loadedQuestion) => {
             const formattedQuestion = {
              //cat
+                type: loadedQuestion.type;
                category: loadedQuestion.category,
                 question: loadedQuestion.question.replace(/(&quot\;)/g,"\"").replace(/(&#039\;)/g,"\'").replace(/(&amp\;)/g,"&")
                 .replace(/(&deg\;)/g,"°").replace(/(&rsquo\;)/g,"\'").replace(/(&shy\;)/g,"-").replace(/(&Eacute\;)/g,"É").replace(/(&ntilde\;)/g,"ñ"),
@@ -123,7 +124,7 @@ getNewQuestion = () => {
         document.getElementById('choice4').style.visibility='hidden';
   }
 */
-    if (currentQuestion.type == "boolean"){
+    if (currentQuestion.type == "multiple"){
         document.getElementById('choice4').style.visibility='hidden';
 }
 // category      
