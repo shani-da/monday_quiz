@@ -38,7 +38,7 @@ fetch(
                 difficulty: loadedQuestion.difficulty,
                 category: loadedQuestion.category,
                 question: loadedQuestion.question.replace(/(&quot\;)/g,"\"").replace(/(&#039\;)/g,"\'").replace(/(&amp\;)/g,"&")
-                .replace(/(&deg\;)/g,"°").replace(/(&rsquo\;)/g,"\'").replace(/(&shy\;)/g,"-").replace(/(&Eacute\;)/g,"É").replace(/(&ntilde\;)/g,"ñ").replace(/(&prime\;)/g,"′").replace(/(&eacute\;)/g,"É").replace(/(&ouml\;)/g,"Ö").replace(/(&uuml\;)/g,"Ü").replace(/(&rdquo\;)/g,'”'),
+                .replace(/(&deg\;)/g,"°").replace(/(&rsquo\;)/g,"\'").replace(/(&shy\;)/g,"-").replace(/(&Eacute\;)/g,"É").replace(/(&ntilde\;)/g,"ñ").replace(/(&prime\;)/g,"′").replace(/(&eacute\;)/g,"É").replace(/(&ouml\;)/g,"Ö").replace(/(&uuml\;)/g,"Ü").replace(/(&rdquo\;)/g,'”').replace(/(&sup2\;)/g,'²'),
             };
             
             const answerChoices = [...loadedQuestion.incorrect_answers];
@@ -48,12 +48,12 @@ fetch(
                 0,
                 
                 loadedQuestion.correct_answer.replace(/(&quot\;)/g,"\"").replace(/(&#039\;)/g,"\'").replace(/(&amp\;)/g,"&")
-                .replace(/(&deg\;)/g,"°").replace(/(&rsquo\;)/g,"\'").replace(/(&shy\;)/g,"-").replace(/(&Eacute\;)/g,"É").replace(/(&ntilde\;)/g,"ñ").replace(/(&prime\;)/g,"′").replace(/(&eacute\;)/g,"É").replace(/(&ouml\;)/g,"Ö").replace(/(&uuml\;)/g,"Ü").replace(/(&rdquo\;)/g,'”')
+                .replace(/(&deg\;)/g,"°").replace(/(&rsquo\;)/g,"\'").replace(/(&shy\;)/g,"-").replace(/(&Eacute\;)/g,"É").replace(/(&ntilde\;)/g,"ñ").replace(/(&prime\;)/g,"′").replace(/(&eacute\;)/g,"É").replace(/(&ouml\;)/g,"Ö").replace(/(&uuml\;)/g,"Ü").replace(/(&rdquo\;)/g,'”').replace(/(&sup2\;)/g,'²')
             );
             
             answerChoices.forEach((choice, index) => {
                 formattedQuestion['choice' + (index + 1)] = choice.replace(/(&quot\;)/g,"\"").replace(/(&#039\;)/g,"\'").replace(/(&amp\;)/g,"&")
-                .replace(/(&deg\;)/g,"°").replace(/(&rsquo\;)/g,"\'").replace(/(&shy\;)/g,"-").replace(/(&Eacute\;)/g,"É").replace(/(&ntilde\;)/g,"ñ").replace(/(&prime\;)/g,"′").replace(/(&eacute\;)/g,"É").replace(/(&ouml\;)/g,"Ö").replace(/(&uuml\;)/g,"Ü").replace(/(&rdquo\;)/g,'”');
+                .replace(/(&deg\;)/g,"°").replace(/(&rsquo\;)/g,"\'").replace(/(&shy\;)/g,"-").replace(/(&Eacute\;)/g,"É").replace(/(&ntilde\;)/g,"ñ").replace(/(&prime\;)/g,"′").replace(/(&eacute\;)/g,"É").replace(/(&ouml\;)/g,"Ö").replace(/(&uuml\;)/g,"Ü").replace(/(&rdquo\;)/g,'”').replace(/(&sup2\;)/g,'²');
             });
         //cat    
         //    const category = loadedQuestion.category;
