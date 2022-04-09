@@ -18,7 +18,7 @@ let availableQuesions = [];
 let questions = [];
 let q;
 let cat = "uf";
-var temp = [];
+let temp = {};
 
 fetch(
     'https://opentdb.com/api.php?amount=100'
@@ -106,7 +106,7 @@ getNewQuestion = () => {
 
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
     currentQuestion = availableQuesions[questionIndex];
-    temp = availableQuesions[questionIndex].incorrect_answers;
+    temp = availableQuesions[questionIndex];
     question.innerText = currentQuestion.question;
     
     
@@ -119,7 +119,7 @@ getNewQuestion = () => {
     
    // document.getElementById('choice3').innerText = currentQuestion.type;
  //      temp = currentQuestion.incorrect_answers;
-   if(temp.length < 2){
+   if(temp.incorrect_answers.length < 2){
         document.getElementById('choice3').style.display = 'none';
         document.getElementById('choice4').style.visibility='hidden';
   }
