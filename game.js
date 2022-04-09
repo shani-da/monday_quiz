@@ -14,6 +14,7 @@ let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuesions = [];
+var CORRECT_BONUS = 10;
 
 let questions = [];
 let q;
@@ -65,7 +66,7 @@ fetch(
     });
 
 //CONSTANTS
-var CORRECT_BONUS = 10;
+
 const MAX_QUESTIONS = 5;
 
 startGame = () => {
