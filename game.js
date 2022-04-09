@@ -107,11 +107,26 @@ getNewQuestion = () => {
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
     currentQuestion = availableQuesions[questionIndex];
     question.innerText = currentQuestion.question;
-    temp = currentQuestion[type];
     
+    
+    //check if true false question
+    temp = currentQuestion;
+    
+    
+    
+    //el.innerHTML = typeof (document.getElementById('choice4'));
+    
+   // document.getElementById('choice3').innerText = currentQuestion.type;
+   
+   if(temp == "boolean"){
+    //    document.getElementById('choice3').style.display = 'none';
+        document.getElementById('choice4').style.visibility='hidden';
+    }
 
 // category      
-       
+if (currentQuestion.type == "boolean"){
+    document.getElementById("cont").style.backgroundImage = "url('sky.jpg')";
+}   
     if (currentQuestion.category == "General Knowledge"){
         document.getElementById("cont").style.backgroundImage = "url('GeneralKnowledge.png')";
     }  
@@ -185,16 +200,6 @@ getNewQuestion = () => {
         document.getElementById("cont").style.backgroundImage = "url('animals.jpg')";
     }
 
-    //check if true false question
-    
-    //el.innerHTML = typeof (document.getElementById('choice4'));
-    
-   // document.getElementById('choice3').innerText = currentQuestion.type;
-   
-    if(temp == "boolean"){
-    //    document.getElementById('choice3').style.display = 'none';
-        document.getElementById('choice4').style.visibility='hidden';
-    }
     
     choices.forEach((choice) => {
         const number = choice.dataset['number'];
