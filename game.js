@@ -248,19 +248,10 @@ choices.forEach((choice) => {
         const classToApply =
             selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
-        let points = 0;
+
         if (classToApply === 'correct') {
-            if(currentQuestion.difficulty == "hard"){
-                points = 15
-                
-            }
-            else if(currentQuestion.difficulty == "medium"){
-                points = 10
-            }
-            else if(currentQuestion.difficulty == "easy"){
-                points = 5
-            }
-            incrementScore(points);
+
+            incrementScore(CORRECT_BONUS);
         }
 
 
