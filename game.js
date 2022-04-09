@@ -65,7 +65,7 @@ fetch(
     });
 
 //CONSTANTS
-const CORRECT_BONUS = 10;
+var CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 5;
 
 startGame = () => {
@@ -211,19 +211,19 @@ getNewQuestion = () => {
     }
 //points by diff.
     let points_score = 0;
-    let points_text = document.getElementById("points");
+   
     if(currentQuestion.difficulty == "hard"){
-            points_score = 15
+            CORRECT_BONUS = 15
             
     }
     else if(currentQuestion.difficulty == "medium"){
-            points_score = 10
+        CORRECT_BONUS = 10
     }
     else if(currentQuestion.difficulty == "easy"){
-            points_score = 5
+        CORRECT_BONUS = 5
     }
-    let temp_text = ""+points_score+" Points";
-    document.getElementById("points") = temp_text;
+    let temp_text = ""+CORRECT_BONUS+" Points";
+    document.getElementById("points").innerText = temp_text;
     
     
     choices.forEach((choice) => {
