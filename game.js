@@ -21,8 +21,6 @@ let q;
 let cat = "uf";
 let temp = {};
 
-document.getElementById('choice3').style.visibility='visible';
-document.getElementById('choice4').style.visibility='visible';
 
 
 fetch(
@@ -84,6 +82,8 @@ startGame = () => {
 var interval;
 getNewQuestion = () => {
     
+    document.getElementById('choice3').style.visibility='visible';
+    document.getElementById('choice4').style.visibility='visible';
     
     if(interval){
         clearInterval(interval);
