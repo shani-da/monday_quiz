@@ -21,6 +21,10 @@ let q;
 let cat = "uf";
 let temp = {};
 
+document.getElementById('choice3').style.visibility='visible';
+document.getElementById('choice4').style.visibility='visible';
+
+
 fetch(
     'https://opentdb.com/api.php?amount=100'
 )
@@ -112,20 +116,7 @@ getNewQuestion = () => {
     question.innerText = currentQuestion.question;
     
     
-    //check if true false question
- //   temp = currentQuestion;
-    
-    
-    
-    //el.innerHTML = typeof (document.getElementById('choice4'));
-    
-   // document.getElementById('choice3').innerText = currentQuestion.type;
- //      temp = currentQuestion.incorrect_answers;
-/*   if(temp.type == "boolean"){
-        document.getElementById('choice3').style.display = 'none';
-        document.getElementById('choice4').style.visibility='hidden';
-  }
-*/
+
     if (currentQuestion.type == "boolean"){
         document.getElementById('choice3').style.visibility='hidden';
         document.getElementById('choice4').style.visibility='hidden';
